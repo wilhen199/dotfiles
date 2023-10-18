@@ -191,15 +191,15 @@
         <value type="string" value="slack.desktop"/>
       </property>
       <property name="recent" type="array">
-        <value type="string" value="vpncmgr.desktop"/>
-        <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="conky.desktop"/>
+        <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="slack.desktop"/>
+        <value type="string" value="teams.desktop"/>
+        <value type="string" value="vpncmgr.desktop"/>
         <value type="string" value="rofi.desktop"/>
         <value type="string" value="notion-app.desktop"/>
         <value type="string" value="firefox.desktop"/>
-        <value type="string" value="teams.desktop"/>
         <value type="string" value="com.github.muriloventuroso.easyssh.desktop"/>
-        <value type="string" value="slack.desktop"/>
         <value type="string" value="vim.desktop"/>
       </property>
     </property>
