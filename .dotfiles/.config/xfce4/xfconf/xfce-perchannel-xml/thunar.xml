@@ -6,7 +6,7 @@
   <property name="last-window-maximized" type="bool" value="true"/>
   <property name="last-window-width" type="int" value="1050"/>
   <property name="last-window-height" type="int" value="622"/>
-  <property name="last-show-hidden" type="bool" value="true"/>
+  <property name="last-show-hidden" type="bool" value="false"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="default-view" type="string" value="ThunarDetailsView"/>
   <property name="misc-directory-specific-settings" type="bool" value="true"/>
@@ -26,7 +26,7 @@
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>
   <property name="tree-icon-emblems" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_75_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,164,166,157,83,448,50,79,1445,179,50,79,50,59"/>
+  <property name="last-details-view-column-widths" type="string" value="50,164,166,157,83,448,50,79,1328,179,50,79,50,176"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="trash:///"/>
     <value type="string" value="network:///"/>

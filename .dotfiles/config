@@ -5,3 +5,6 @@
 [remote "origin"]
 	url = https://github.com/wilhen199/dotfiles/
 	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "Arch"]
+	remote = origin
+	merge = refs/heads/Arch
