@@ -8,3 +8,5 @@
 [branch "Arch"]
 	remote = origin
 	merge = refs/heads/Arch
+[lfs]
+	repositoryformatversion = 0
