@@ -1,40 +1,32 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/home/wilhen/Escritorio/pago.png]
-row=7
-col=0
-
-[/home/wilhen/Escritorio/AWS Quest.png]
-row=6
-col=0
-
-[/home/wilhen/Escritorio/2023-09-02_20-36.png]
-row=2
-col=0
-
-[/home/wilhen/Escritorio/2023-09-03_17-25.png]
-row=3
-col=0
-
-[/home/wilhen/Escritorio/2023-08-18_20-50.png]
-row=1
-col=0
-
-[/home/wilhen/Escritorio/1692296089574.jpeg]
-row=0
-col=0
-
-[/home/wilhen/Escritorio/2023-09-03_19-41.png]
+[/home/wilhen/Escritorio/steam.desktop]
 row=4
 col=0
 
-[/home/wilhen/Escritorio/2023-09-02_19-02.png]
-row=8
+[/home/wilhen/Escritorio/date.py]
+row=3
 col=0
 
-[/home/wilhen/Escritorio/2023-09-03_19-59.png]
+[/home/wilhen/Escritorio/2023-11-15_17-01.png]
+row=2
+col=0
+
+[/home/wilhen/Escritorio/2023-11-15_17-09.png]
+row=1
+col=0
+
+[/home/wilhen/Escritorio/Instructions.docx]
+row=0
+col=0
+
+[/home/wilhen/Escritorio/json.json]
 row=5
+col=0
+
+[/home/wilhen/Escritorio/pago.png]
+row=6
 col=0
 
 [Papelera]

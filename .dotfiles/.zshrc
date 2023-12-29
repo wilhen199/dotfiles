@@ -143,7 +143,9 @@ function updater(){
 	
 }
 function parup(){
-	paru -S $(paru -Qua | awk '{print $1}') 2> /dev/null
+	#instalar= paru -Qua | awk '{print $1}'
+	#echo $porInstalar
+	paru -S $(paru -Qua | awk '{print $1}' 2> /dev/null)
 }
 
 function cd {
