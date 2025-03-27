@@ -1,0 +1,101 @@
+-- Conky, a system monitor https://github.com/brndnmtthws/conky
+--
+-- This configuration file is Lua code. You can write code in here, and it will
+-- execute when Conky loads. You can use it to generate your own advanced
+-- configurations.
+--
+-- Try this (remove the `--`):
+--
+--   print("Loading Conky config")
+--
+-- For more on Lua, see:
+-- https://www.lua.org/pil/contents.html
+
+conky.config = {
+    alignment = 'top_right',
+    own_window_argb_visual = true,
+    own_window_argb_value = 50,
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'ffffff',
+    default_outline_color = '808080',
+    default_shade_color = '808080',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Roboto Regular:size=10',
+    gap_x = 10,
+    gap_y = 50,
+    minimum_height = 5,
+    minimum_width = 30,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'override',
+    own_window_transparent = true,
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 2.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+    text_buffer_size=256,
+    own_window_hints = undecorate,sticky,skip_taskbar,skip_pager,
+    font1 = 'FontAwesome',
+    xinerama_head = 1
+}
+
+
+conky.text = [[
+${color ff0000}$alignc Wilhen:$#def1ed ${scroll 32 - $sysname $nodename}
+${alignc}${color1}${font :size=12}${time %H:%M}${font}${color lightgrey}${alignc}
+${alignc}${font :size=12}${time %A %d %B %Y}${font}${alignc}
+$hr
+${color 808080}Uptime:$color $uptime
+${color 808080}${font1}  ${font}$#def1ed $processes  ${color grey}Running:$#def1ed  $running_processes
+$hr
+${color 808080}${font1} ${font}:$#def1ed $cpu% ${cpubar 5}
+#${color 808080}${font}CPU Usage:$#def1ed $cpu% ${cpubar 4}
+$hr
+${color 808080}${font1}   ${font}$#def1ed $mem/$memmax
+$#def1ed$memperc% ${membar 4}
+$hr
+${color 808080}${font FontAwesome}
+# / $#def1ed${fs_used /}/${fs_size /} 
+# / $#def1ed${fs_bar 6 /}
+${font} /home $#def1ed${fs_used /home}/${fs_size /home}
+ /home $#def1ed${fs_bar 6 /home}
+$hr
+${color 808080}${font FontAwesome} 
+${color 808080}${font}External IP: $color${execi 1000 wget -q -O- http://ipecho.net/plain; echo}
+${color 808080}Señal: $#def1ed${wireless_link_qual_perc wlan0}% ${alignr}${wireless_link_bar 10,50 wlan0}
+$hr
+${color 808080}${font FontAwesome}
+${color Dimgrey}${font}Currently: $battery
+${color 808080}Battery: $#def1ed${battery_percent BAT0}% ${alignr}${battery_bar 8,70 BAT0}
+#${color lightgrey}$stippled_hr
+#$hr
+#${font :size=9}${color lightred}APP NAME: ${goto 160}MEMORY: ${goto 245}CPU: ${color}${font}
+#${voffset -16}
+#${font :size=9}${color1}${top_mem name 1} ${color}${font} ${goto 160}${top mem 1} % ${goto 235}${top cpu 1} %
+#${font :size=9}${color1}${top_mem name 2} ${color}${font} ${goto 160}${top mem 2} % ${goto 235}${top cpu 2} %
+#${font :size=9}${color1}${top_mem name 3} ${color}${font} ${goto 160}${top mem 3} % ${goto 235}${top cpu 3} %
+#${font :size=9}${color1}${top_mem name 4} ${color}${font} ${goto 160}${top mem 4} % ${goto 235}${top cpu 4} %
+#${font :size=9}${color1}${top_mem name 5} ${color}${font} ${goto 160}${top mem 5} % ${goto 235}${top cpu 5} %
+#${font :size=9}${color1}${top_mem name 6} ${color}${font} ${goto 160}${top mem 6} % ${goto 235}${top cpu 6} %
+#${font :size=9}${color1}${top_mem name 7} ${color}${font} ${goto 160}${top mem 7} % ${goto 235}${top cpu 7} %
+#${font :size=9}${color1}${top_mem name 8} ${color}${font} ${goto 160}${top mem 8} % ${goto 235}${top cpu 8} %
+#${font :size=9}${color1}${top_mem name 9} ${color}${font} ${goto 160}${top mem 9} % ${goto 235}${top cpu 9} %
+#${font :size=9}${color1}${top_mem name 10} ${color}${font} ${goto 160}${top mem 10} % ${goto 235}${top cpu 10} %
+
+]]
