@@ -2,11 +2,11 @@
 
 # Configuración
 REPO_URL="https://github.com/wilhen199/dotfiles.git"
-REPO_PATH="$HOME/bk"
+REPO_PATH="$HOME/dotfiles"
 BRANCH="linux"
 
 # Archivo de respaldo de Tilix
-TILIX_BACKUP="$REPO_PATH/tilix_backup.conf"
+TILIX_BACKUP="$REPO_PATH/tilix/tilix_backup.conf"
 
 # Clonar o actualizar el repo
 if [ ! -d "$REPO_PATH/.git" ]; then
