@@ -193,7 +193,7 @@
       </property>
     </property>
     <property name="plugin-25" type="string" value="whiskermenu">
-      <property name="button-icon" type="string" value="/home/wilhen/bk/icon_png/Basketball-icon-2.png"/>
+      <property name="button-icon" type="string" value="/home/wilhen/dotfiles/icon_png/Basketball-icon-2.png"/>
       <property name="launcher-show-description" type="bool" value="false"/>
       <property name="launcher-show-tooltip" type="bool" value="false"/>
       <property name="category-show-name" type="bool" value="false"/>
@@ -220,8 +220,8 @@
         <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
       </property>
       <property name="recent" type="array">
-        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="vim.desktop"/>
         <value type="string" value="chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop"/>
         <value type="string" value="org.gnome.Nautilus.desktop"/>

@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="displays" version="1.0">
-  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="ActiveProfile" type="string" value="Temp"/>
   <property name="Fallback" type="empty">
     <property name="eDP1" type="string" value="Portátil">
       <property name="Active" type="bool" value="true"/>
@@ -90,20 +90,6 @@
         <property name="Y" type="int" value="1080"/>
       </property>
     </property>
-    <property name="DP-2" type="string" value="LG Electronics 22&quot;">
-      <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="67de5a343b653704c9e15d798648fb3621bf647c"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="59.933878003184937"/>
-      <property name="Rotation" type="int" value="0"/>
-      <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
-      <property name="Scale" type="double" value="1"/>
-      <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="0"/>
-      </property>
-    </property>
     <property name="DP-3" type="string" value="LG Electronics 24&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="350bd2bd0a318d59c0a3497b82f0cbaba90e3036"/>
@@ -129,7 +115,7 @@
       <property name="Scale" type="double" value="1"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="1920"/>
-        <property name="Y" type="int" value="156"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
   </property>

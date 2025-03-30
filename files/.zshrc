@@ -147,7 +147,7 @@ alias tf="terraform"
 alias tfval="terraform validate"
 alias tfplan="terraform plan"
 alias tfap="terraform apply"
-
+alias gs="git status"
 
 
 # Functions

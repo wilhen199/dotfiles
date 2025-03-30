@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Configuración
 REPO_URL="https://github.com/wilhen199/dotfiles.git"
