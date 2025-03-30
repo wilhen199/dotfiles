@@ -1,0 +1,325 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="double" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="size" type="uint" value="40"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="25"/>
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="11"/>
+        <value type="int" value="14"/>
+        <value type="int" value="29"/>
+        <value type="int" value="12"/>
+        <value type="int" value="7"/>
+        <value type="int" value="4"/>
+        <value type="int" value="16"/>
+        <value type="int" value="17"/>
+        <value type="int" value="15"/>
+      </property>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="output-name" type="string" value="Automatic"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="1"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="sort-order" type="uint" value="4"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (87%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (88%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (86%)"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="la conexión de red inalámbrica a «fcom_co» está activa: fcom_co (55%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «fcom_co» está activa: fcom_co (81%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (69%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (62%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (72%)"/>
+        <value type="string" value="caffeine-indicator"/>
+        <value type="string" value="anydesk"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (63%)"/>
+        <value type="string" value="preparando la conexión de red inalámbrica «claro_wifi28»…"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="la conexión de red cableada «conexión cableada 1» está activa"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (68%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «wiwe» está activa: wiwe (74%)"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="configurando la conexión de red inalámbrica «figueredo_5g»…"/>
+        <value type="string" value="whatsapp-for-linux"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (99%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (90%)"/>
+        <value type="string" value="vmware-tray"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (93%)"/>
+        <value type="string" value="gestor de tareas"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (91%)"/>
+        <value type="string" value="remmina"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (92%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (94%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (95%)"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="miniaplicación gestor de la red"/>
+        <value type="string" value="fortitray"/>
+        <value type="string" value="stacer"/>
+        <value type="string" value="zoiper"/>
+        <value type="string" value="teams"/>
+        <value type="string" value="skypeforlinux"/>
+        <value type="string" value="shutter"/>
+        <value type="string" value="ulauncher"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (100%)"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="portapapeles"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (97%)"/>
+        <value type="string" value="notas"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (98%)"/>
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (96%)"/>
+        <value type="string" value="sin conexión de red"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="kazam"/>
+        <value type="string" value="indicator-solaar"/>
+        <value type="string" value="caffeine-cup-empty"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="openfortiGUI"/>
+        <value type="string" value="chrome_status_icon_3"/>
+        <value type="string" value="chrome_status_icon_2"/>
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="droidcam"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="Skype1"/>
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="Slack1"/>
+        <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="example-simple-client"/>
+        <value type="string" value="stacer"/>
+        <value type="string" value="ulauncher"/>
+      </property>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+      <property name="icon-size" type="int" value="20"/>
+      <property name="hidden-items" type="array">
+        <value type="string" value="stacer"/>
+        <value type="string" value="example-simple-client"/>
+        <value type="string" value="ulauncher"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="zoom"/>
+      </property>
+      <property name="hidden-legacy-items" type="array">
+        <value type="string" value="clipman"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance10091;chromium.instance1060;chromium.instance1070;chromium.instance10992;chromium.instance1114;chromium.instance1119;chromium.instance1120;chromium.instance1150;chromium.instance1159;chromium.instance1161;chromium.instance1163;chromium.instance1168;chromium.instance1169;chromium.instance1173;chromium.instance1174;chromium.instance1178;chromium.instance1179;chromium.instance1181;chromium.instance1189;chromium.instance1199;chromium.instance1211;chromium.instance12134;chromium.instance1214;chromium.instance1230;chromium.instance1232;chromium.instance1254;chromium.instance1262;chromium.instance1276;chromium.instance1287;chromium.instance1291;chromium.instance1301;chromium.instance1303;chromium.instance1311;chromium.instance1312;chromium.instance1327;chromium.instance1333;chromium.instance13369;chromium.instance13371;chromium.instance1338;chromium.instance1342;chromium.instance1344;chromium.instance1348;chromium.instance1351;chromium.instance1354;chromium.instance1360;chromium.instance1370;chromium.instance1376;chromium.instance13914;chromium.instance1397;chromium.instance1401;chromium.instance1409;chromium.instance1425;chromium.instance1433;chromium.instance1442;chromium.instance1475;chromium.instance1492;chromium.instance1500;chromium.instance1501;chromium.instance15020;chromium.instance1506;chromium.instance1508;chromium.instance1511;chromium.instance1575;chromium.instance1582;chromium.instance1604;chromium.instance1627;chromium.instance1631;chromium.instance1651;chromium.instance1673;chromium.instance1711;chromium.instance1815;chromium.instance18242;chromium.instance1868;chromium.instance1898;chromium.instance1901;chromium.instance1908;chromium.instance19330;chromium.instance1940;chromium.instance19428;chromium.instance1967;chromium.instance1990;chromium.instance2007;chromium.instance2022;chromium.instance2028;chromium.instance2030;chromium.instance20317;chromium.instance2040;chromium.instance2044;chromium.instance2076;chromium.instance2096;chromium.instance2106;chromium.instance2128;chromium.instance2134;chromium.instance21449;chromium.instance2148;chromium.instance2153;chromium.instance2161;chromium.instance2215;chromium.instance2221;chromium.instance2237;chromium.instance22375;chromium.instance2240;chromium.instance2259;chromium.instance2281;chromium.instance2285;chromium.instance2290;chromium.instance2306;chromium.instance2315;chromium.instance2316;chromium.instance2319;chromium.instance2320;chromium.instance2321;chromium.instance2330;chromium.instance2347;chromium.instance2353;chromium.instance2356;chromium.instance2364;chromium.instance2368;chromium.instance2376;chromium.instance2380;chromium.instance2381;chromium.instance2382;chromium.instance2389;chromium.instance2394;chromium.instance2396;chromium.instance2397;chromium.instance2404;chromium.instance2409;chromium.instance2419;chromium.instance2421;chromium.instance24237;chromium.instance2425;chromium.instance2426;chromium.instance2432;chromium.instance2450;chromium.instance24610;chromium.instance2470;chromium.instance2472;chromium.instance2473;chromium.instance2475;chromium.instance2478;chromium.instance2480;chromium.instance2502;chromium.instance2521;chromium.instance2548;chromium.instance2553;chromium.instance2558;chromium.instance2560;chromium.instance2562;chromium.instance2571;chromium.instance2576;chromium.instance2580;chromium.instance2588;chromium.instance2590;chromium.instance2597;chromium.instance2599;chromium.instance2619;chromium.instance2627;chromium.instance2628;chromium.instance2629;chromium.instance2630;chromium.instance2632;chromium.instance2643;chromium.instance2651;chromium.instance2656;chromium.instance2664;chromium.instance2666;chromium.instance2671;chromium.instance2674;chromium.instance2699;chromium.instance2710;chromium.instance2743;chromium.instance2755;chromium.instance2769;chromium.instance2773;chromium.instance2779;chromium.instance2816;chromium.instance2819;chromium.instance2825;chromium.instance2830;chromium.instance2836;chromium.instance2846;chromium.instance2862;chromium.instance2866;chromium.instance2884;chromium.instance2888;chromium.instance2892;chromium.instance2894;chromium.instance2907;chromium.instance2908;chromium.instance2910;chromium.instance2920;chromium.instance2921;chromium.instance2933;chromium.instance2934;chromium.instance2972;chromium.instance2993;chromium.instance2998;chromium.instance3010;chromium.instance3016;chromium.instance3018;chromium.instance3024;chromium.instance3026;chromium.instance3035;chromium.instance3044;chromium.instance3045;chromium.instance30517;chromium.instance3054;chromium.instance3078;chromium.instance3086;chromium.instance3092;chromium.instance30920;chromium.instance3094;chromium.instance3121;chromium.instance3122;chromium.instance3126;chromium.instance3127;chromium.instance3128;chromium.instance3131;chromium.instance3140;chromium.instance3158;chromium.instance3171;chromium.instance3176;chromium.instance3177;chromium.instance3244;chromium.instance3260;chromium.instance3284;chromium.instance3295;chromium.instance3296;chromium.instance3319;chromium.instance3368;chromium.instance3370;chromium.instance3399;chromium.instance3406;chromium.instance3410;chromium.instance3443;chromium.instance3500;chromium.instance3549;chromium.instance3559;chromium.instance3564;chromium.instance3567;chromium.instance3655;chromium.instance38318;chromium.instance38833;chromium.instance3892;chromium.instance3903;chromium.instance3935;chromium.instance4089;chromium.instance4105;chromium.instance41081;chromium.instance4119;chromium.instance4125;chromium.instance4226;chromium.instance4250;chromium.instance4283;chromium.instance4368;chromium.instance4433;chromium.instance4446;chromium.instance44532;chromium.instance4460;chromium.instance4487;chromium.instance4621;chromium.instance4625;chromium.instance4641;chromium.instance4709;chromium.instance4724;chromium.instance4729;chromium.instance4745;chromium.instance4765;chromium.instance4790;chromium.instance4876;chromium.instance4929;chromium.instance5031;chromium.instance5063;chromium.instance5131;chromium.instance5174;chromium.instance5272;chromium.instance5357;chromium.instance54911;chromium.instance5533;chromium.instance5646;chromium.instance5747;chromium.instance5758;chromium.instance5899;chromium.instance6021;chromium.instance6220;chromium.instance6485;chromium.instance6533;chromium.instance65691;chromium.instance67963;chromium.instance6977;chromium.instance72536;chromium.instance7743;chromium.instance8088;chromium.instance8384;chromium.instance98218;com.github.eneshecan.WhatsAppForLinux.instance-1167;com.github.eneshecan.WhatsAppForLinux.instance-1169;com.github.eneshecan.WhatsAppForLinux.instance-221;de.haeckerfelix.Shortwave;edge.instance18404;firefox.instance100293;firefox.instance101177;firefox.instance10324;firefox.instance10389;firefox.instance11337;firefox.instance16723;firefox.instance17456;firefox.instance17535;firefox.instance19146;firefox.instance19771;firefox.instance20824;firefox.instance20927;firefox.instance23396;firefox.instance23419;firefox.instance23756;firefox.instance23814;firefox.instance2541;firefox.instance2614;firefox.instance26778;firefox.instance2701;firefox.instance2715;firefox.instance27881;firefox.instance2850;firefox.instance2862;firefox.instance28709;firefox.instance28864;firefox.instance2908;firefox.instance2910;firefox.instance29312;firefox.instance2933;firefox.instance2964;firefox.instance2966;firefox.instance3001;firefox.instance30404;firefox.instance3307;firefox.instance3365;firefox.instance3370;firefox.instance33835;firefox.instance3535;firefox.instance3694;firefox.instance3722;firefox.instance3748;firefox.instance3777;firefox.instance38965;firefox.instance4081;firefox.instance4104;firefox.instance4227;firefox.instance4278;firefox.instance4680;firefox.instance4695;firefox.instance4866;firefox.instance4940;firefox.instance4984;firefox.instance50911;firefox.instance52193;firefox.instance52782;firefox.instance55140;firefox.instance5587;firefox.instance5879;firefox.instance6146;firefox.instance6157;firefox.instance67742;firefox.instance6918;firefox.instance7091;firefox.instance7194;firefox.instance72627;firefox.instance7815;firefox.instance81593;firefox.instance83139;firefox.instance86907;firefox.instance90178;firefox.instance9297;firefox.instance9444;firefox.instance99033;spotify;vlc"/>
+      <property name="known-players" type="string" value="Chrome;Chromium;Firefox;firefox;Microsoft Edge;Navegador web Firefox;Reproductor multimedia VLC;spotify;Spotify;vlc"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="timezone" type="string" value="America/Bogota"/>
+      <property name="tooltip-format" type="string" value="Semana %V"/>
+      <property name="digital-format" type="string" value="%a %d  %R"/>
+      <property name="digital-time-format" type="string" value="%a %d  %R"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-font" type="string" value="Sans 8"/>
+      <property name="command" type="string" value=""/>
+    </property>
+    <property name="plugin-14" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+      <property name="button-title" type="uint" value="0"/>
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="+restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+    </property>
+    <property name="plugin-25" type="string" value="whiskermenu">
+      <property name="button-icon" type="string" value="/home/wilhen/bk/icon_png/Basketball-icon-2.png"/>
+      <property name="launcher-show-description" type="bool" value="false"/>
+      <property name="launcher-show-tooltip" type="bool" value="false"/>
+      <property name="category-show-name" type="bool" value="false"/>
+      <property name="view-mode" type="int" value="0"/>
+      <property name="favorites-in-recent" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="menu-width" type="int" value="699"/>
+      <property name="menu-height" type="int" value="492"/>
+      <property name="show-command-lockscreen" type="bool" value="false"/>
+      <property name="command-switchuser" type="string" value="dm-tool switch-to-greeter"/>
+      <property name="show-command-switchuser" type="bool" value="true"/>
+      <property name="show-command-logout" type="bool" value="false"/>
+      <property name="favorites" type="array">
+        <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="spotify-adblock.desktop"/>
+        <value type="string" value="microsoft-edge.desktop"/>
+        <value type="string" value="forticlient.desktop"/>
+        <value type="string" value="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"/>
+        <value type="string" value="chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop"/>
+        <value type="string" value="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop"/>
+        <value type="string" value="chrome-eilembjdkfgodjkcjnpgpaenohkicgjd-Default.desktop"/>
+        <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
+      </property>
+      <property name="recent" type="array">
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="vim.desktop"/>
+        <value type="string" value="chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop"/>
+        <value type="string" value="org.gnome.Nautilus.desktop"/>
+        <value type="string" value="mysql-workbench.desktop"/>
+        <value type="string" value="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"/>
+        <value type="string" value="gparted.desktop"/>
+        <value type="string" value="grub-customizer.desktop"/>
+        <value type="string" value="thunar-volman-settings.desktop"/>
+      </property>
+      <property name="launcher-show-name" type="bool" value="true"/>
+      <property name="position-categories-horizontal" type="bool" value="true"/>
+      <property name="position-profile-alternate" type="bool" value="false"/>
+      <property name="position-commands-alternate" type="bool" value="false"/>
+      <property name="button-single-row" type="bool" value="false"/>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="settings" type="empty">
+        <property name="add-primary-clipboard" type="bool" value="false"/>
+        <property name="enable-actions" type="bool" value="false"/>
+      </property>
+      <property name="tweaks" type="empty">
+        <property name="paste-on-activate" type="uint" value="1"/>
+        <property name="never-confirm-history-clear" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="string" value="clock">
+      <property name="timezone" type="string" value="Chile/Continental"/>
+      <property name="digital-format" type="string" value="%_H:%M"/>
+      <property name="tooltip-format" type="string" value="%x"/>
+      <property name="digital-time-format" type="string" value="%_H:%M"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="mode" type="uint" value="2"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator"/>
+    <property name="plugin-29" type="string" value="weather">
+      <property name="location" type="empty">
+        <property name="name" type="string" value="Bogotá, Bogotá"/>
+        <property name="latitude" type="string" value="4.653382"/>
+        <property name="longitude" type="string" value="-74.083633"/>
+      </property>
+      <property name="msl" type="int" value="2556"/>
+      <property name="timezone" type="string" value="America/Bogota"/>
+      <property name="offset" type="string" value="-05:00"/>
+      <property name="cache-max-age" type="int" value="172800"/>
+      <property name="power-saving" type="bool" value="true"/>
+      <property name="units" type="empty">
+        <property name="temperature" type="int" value="0"/>
+        <property name="pressure" type="int" value="2"/>
+        <property name="windspeed" type="int" value="0"/>
+        <property name="precipitation" type="int" value="0"/>
+        <property name="altitude" type="int" value="0"/>
+        <property name="apparent-temperature" type="int" value="0"/>
+      </property>
+      <property name="round" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="tooltip-style" type="int" value="1"/>
+      <property name="forecast" type="empty">
+        <property name="layout" type="int" value="0"/>
+        <property name="days" type="int" value="5"/>
+      </property>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
+      <property name="scrollbox" type="empty">
+        <property name="show" type="bool" value="true"/>
+        <property name="animate" type="bool" value="true"/>
+        <property name="lines" type="int" value="2"/>
+        <property name="color" type="string" value="rgba(0,0,0,0)"/>
+        <property name="use-color" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="systemload">
+      <property name="cpu" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="memory" type="empty">
+        <property name="label" type="string" value=""/>
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+      <property name="swap" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="network" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="uptime" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-17" type="string" value="notification-plugin"/>
+    <property name="notes" type="empty">
+      <property name="global" type="empty">
+        <property name="version" type="string" value="1.11.2"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="numbering" type="bool" value="false"/>
+    </property>
+  </property>
+</channel>
