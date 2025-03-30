@@ -136,7 +136,6 @@ alias cat='bat'
 alias powerlevel='nano ~/.p10k.zsh'
 alias install='sudo pacman -S'
 #alias update-paru='paru -S $(paru -Qua | awk '{print $1}')'
-alias dotf="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ..="cd .."
 alias ...="cd ..."
 alias df="df -h"
