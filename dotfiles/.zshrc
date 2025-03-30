@@ -208,16 +208,13 @@ function copydir {
 #  pwd | tr -d "\r\n" | clipcopy
 }
 
-
-
 #source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
@@ -225,3 +222,7 @@ fi
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 complete -C '/usr/local/bin/aws_completer' aws
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+
