@@ -26,7 +26,7 @@
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>
   <property name="tree-icon-emblems" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_75_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,164,153,145,140,194,50,79,1286,179,50,76,50,182"/>
+  <property name="last-details-view-column-widths" type="string" value="50,164,153,145,140,194,50,79,1282,179,50,76,50,186"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="trash:///"/>
     <value type="string" value="network:///"/>
