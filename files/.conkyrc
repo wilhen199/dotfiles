@@ -48,7 +48,7 @@ conky.config = {
     --Textual
 
     extra_newline = false,
-    font = 'Roboto Regular:size=10',    
+    font = 'Roboto Regular:size=12',
     font1 = 'FontAwesome',
     short_units = true,
     uppercase = false,
@@ -59,7 +59,7 @@ conky.config = {
     --Windows
 
     own_window_argb_visual = true,
-    own_window_argb_value = 0,
+    own_window_argb_value = 50,
     own_window = true,
     own_window_class = 'Conky',
     own_window_type = 'dock',
@@ -75,18 +75,17 @@ conky.config = {
     out_to_ncurses = false,
     out_to_stderr = false,
     out_to_x = true,
-    own_window_colour = '#ffd9d9',
 
 }
 
 
 conky.text = [[
-${color ff0000}$alignc Wilhen:$#def1ed ${scroll 32 - $sysname $nodename}
-${alignc}${color1}${font :size=12}${time %H:%M}${font}${color lightgrey}${alignc}
-${alignc}${font :size=12}${time %A %d %B %Y}${font}${alignc}
+${font :size=16}${color ff0000}$alignc Wilhen:$#def1ed ${scroll 32 - $sysname $nodename}
+${alignc}${color1}${font :size=16}${time %H:%M}${font}${color lightgrey}${alignc}
+${alignc}${font :size=16}${time %A %d %B %Y}${font}${alignc}
 $hr
 ${color 808080}Uptime:$color $uptime
-${color 808080}${font1}  ${font}$#def1ed $processes  ${color grey}Running:$#def1ed  $running_processes
+${color 808080}${font1}  ${font }$#def1ed $processes  ${color grey}Running:$#def1ed  $running_processes
 $hr
 ${color 808080}${font1} ${font}:$#def1ed $cpu% ${cpubar 5}
 #${color 808080}${font}CPU Usage:$#def1ed $cpu% ${cpubar 4}
@@ -109,17 +108,18 @@ ${color Dimgrey}${font}Currently: $battery
 ${color 808080}Battery: $#def1ed${battery_percent BAT0}% ${alignr}${battery_bar 8,70 BAT0}
 #${color lightgrey}$stippled_hr
 $hr
-${font :size=9}${color lightred}APP: ${goto 80}MEMORY: ${goto 160}CPU: ${color}${font}
+${font :size=12}${color F88158}APP: ${goto 80}MEMORY: ${goto 160}CPU: ${color}${font}
 #${voffset -16}
-${font :size=9}${color1}${top_mem name 1} ${color}${font} ${goto 80}${top_mem mem 1} % ${goto 160}${top_mem cpu 1} %
-${font :size=9}${color1}${top_mem name 2} ${color}${font} ${goto 80}${top_mem mem 2} % ${goto 160}${top_mem cpu 2} %
-${font :size=9}${color1}${top_mem name 3} ${color}${font} ${goto 80}${top_mem mem 3} % ${goto 160}${top_mem cpu 3} %
-${font :size=9}${color1}${top_mem name 4} ${color}${font} ${goto 80}${top_mem mem 4} % ${goto 160}${top_mem cpu 4} %
-${font :size=9}${color1}${top_mem name 5} ${color}${font} ${goto 80}${top_mem mem 5} % ${goto 160}${top_mem cpu 5} %
-${font :size=9}${color1}${top_mem name 6} ${color}${font} ${goto 80}${top_mem mem 6} % ${goto 160}${top_mem cpu 6} %
-${font :size=9}${color1}${top_mem name 7} ${color}${font} ${goto 80}${top_mem mem 7} % ${goto 160}${top_mem cpu 7} %
-${font :size=9}${color1}${top_mem name 8} ${color}${font} ${goto 80}${top_mem mem 8} % ${goto 160}${top_mem cpu 8} %
-${font :size=9}${color1}${top_mem name 9} ${color}${font} ${goto 80}${top_mem mem 9} % ${goto 160}${top_mem cpu 9} %
+${font :size=12}${color1}${top_mem name 1} ${color}${font} ${goto 80}${top_mem mem 1} % ${goto 160}${top_mem cpu 1} %
+${font :size=12}${color1}${top_mem name 2} ${color}${font} ${goto 80}${top_mem mem 2} % ${goto 160}${top_mem cpu 2} %
+${font :size=12}${color1}${top_mem name 2} ${color}${font} ${goto 80}${top_mem mem 2} % ${goto 160}${top_mem cpu 2} %
+${font :size=12}${color1}${top_mem name 3} ${color}${font} ${goto 80}${top_mem mem 3} % ${goto 160}${top_mem cpu 3} %
+${font :size=12}${color1}${top_mem name 4} ${color}${font} ${goto 80}${top_mem mem 4} % ${goto 160}${top_mem cpu 4} %
+${font :size=12}${color1}${top_mem name 5} ${color}${font} ${goto 80}${top_mem mem 5} % ${goto 160}${top_mem cpu 5} %
+#${font :size=12}${color1}${top_mem name 6} ${color}${font} ${goto 80}${top_mem mem 6} % ${goto 160}${top_mem cpu 6} %
+#${font :size=12}${color1}${top_mem name 7} ${color}${font} ${goto 80}${top_mem mem 7} % ${goto 160}${top_mem cpu 7} %
+#${font :size=12}${color1}${top_mem name 8} ${color}${font} ${goto 80}${top_mem mem 8} % ${goto 160}${top_mem cpu 8} %
+#${font :size=12}${color1}${top_mem name 9} ${color}${font} ${goto 80}${top_mem mem 9} % ${goto 160}${top_mem cpu 9} %
 #${font :size=9}${color1}${top_mem name 10} ${color}${font} ${goto 160}${top mem 10} % ${goto 235}${top cpu 10} %
 
 ]]
