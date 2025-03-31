@@ -67,6 +67,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (89%)"/>
         <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (87%)"/>
         <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (88%)"/>
         <value type="string" value="la conexión de red inalámbrica a «figueredo_5g» está activa: figueredo_5g (86%)"/>
@@ -212,7 +213,6 @@
         <value type="string" value="firefox.desktop"/>
         <value type="string" value="spotify-adblock.desktop"/>
         <value type="string" value="microsoft-edge.desktop"/>
-        <value type="string" value="forticlient.desktop"/>
         <value type="string" value="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"/>
         <value type="string" value="chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop"/>
         <value type="string" value="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop"/>

@@ -135,6 +135,7 @@ alias ls='lsd --group-dirs=first --sort=time'
 alias cat='bat'
 alias powerlevel='nano ~/.p10k.zsh'
 alias install='sudo pacman -S'
+alias uninstall='sudo pacman -R'
 #alias update-paru='paru -S $(paru -Qua | awk '{print $1}')'
 alias ..="cd .."
 alias ...="cd ..."

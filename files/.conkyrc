@@ -52,7 +52,7 @@ conky.config = {
     text_buffer_size=256,
     own_window_hints = undecorate,sticky,skip_taskbar,skip_pager,
     font1 = 'FontAwesome',
-    xinerama_head = 1
+    
 }
 
 
@@ -84,18 +84,18 @@ ${color 808080}${font FontAwesome}
 ${color Dimgrey}${font}Currently: $battery
 ${color 808080}Battery: $#def1ed${battery_percent BAT0}% ${alignr}${battery_bar 8,70 BAT0}
 #${color lightgrey}$stippled_hr
-#$hr
-#${font :size=9}${color lightred}APP NAME: ${goto 160}MEMORY: ${goto 245}CPU: ${color}${font}
+$hr
+${font :size=9}${color lightred}APP: ${goto 80}MEMORY: ${goto 160}CPU: ${color}${font}
 #${voffset -16}
-#${font :size=9}${color1}${top_mem name 1} ${color}${font} ${goto 160}${top mem 1} % ${goto 235}${top cpu 1} %
-#${font :size=9}${color1}${top_mem name 2} ${color}${font} ${goto 160}${top mem 2} % ${goto 235}${top cpu 2} %
-#${font :size=9}${color1}${top_mem name 3} ${color}${font} ${goto 160}${top mem 3} % ${goto 235}${top cpu 3} %
-#${font :size=9}${color1}${top_mem name 4} ${color}${font} ${goto 160}${top mem 4} % ${goto 235}${top cpu 4} %
-#${font :size=9}${color1}${top_mem name 5} ${color}${font} ${goto 160}${top mem 5} % ${goto 235}${top cpu 5} %
-#${font :size=9}${color1}${top_mem name 6} ${color}${font} ${goto 160}${top mem 6} % ${goto 235}${top cpu 6} %
-#${font :size=9}${color1}${top_mem name 7} ${color}${font} ${goto 160}${top mem 7} % ${goto 235}${top cpu 7} %
-#${font :size=9}${color1}${top_mem name 8} ${color}${font} ${goto 160}${top mem 8} % ${goto 235}${top cpu 8} %
-#${font :size=9}${color1}${top_mem name 9} ${color}${font} ${goto 160}${top mem 9} % ${goto 235}${top cpu 9} %
+${font :size=9}${color1}${top_mem name 1} ${color}${font} ${goto 80}${top_mem mem 1} % ${goto 160}${top_mem cpu 1} %
+${font :size=9}${color1}${top_mem name 2} ${color}${font} ${goto 80}${top_mem mem 2} % ${goto 160}${top_mem cpu 2} %
+${font :size=9}${color1}${top_mem name 3} ${color}${font} ${goto 80}${top_mem mem 3} % ${goto 160}${top_mem cpu 3} %
+${font :size=9}${color1}${top_mem name 4} ${color}${font} ${goto 80}${top_mem mem 4} % ${goto 160}${top_mem cpu 4} %
+${font :size=9}${color1}${top_mem name 5} ${color}${font} ${goto 80}${top_mem mem 5} % ${goto 160}${top_mem cpu 5} %
+#${font :size=9}${color1}${top_mem name 6} ${color}${font} ${goto 80}${top_mem mem 6} % ${goto 160}${top cpu 6} %
+#${font :size=9}${color1}${top_mem name 7} ${color}${font} ${goto 80}${top_mem mem 7} % ${goto 160}${top cpu 7} %
+#${font :size=9}${color1}${top_mem name 8} ${color}${font} ${goto 80}${top_mem mem 8} % ${goto 160}${top cpu 8} %
+#${font :size=9}${color1}${top_mem name 9} ${color}${font} ${goto 80}${top_mem mem 9} % ${goto 160}${top cpu 9} %
 #${font :size=9}${color1}${top_mem name 10} ${color}${font} ${goto 160}${top mem 10} % ${goto 235}${top cpu 10} %
 
 ]]
