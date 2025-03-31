@@ -12,47 +12,71 @@
 -- https://www.lua.org/pil/contents.html
 
 conky.config = {
+
+    --Various settings
+
+    background = true,				-- Boolean value, if true, Conky will be forked to background when started.
+    cpu_avg_samples = 2,			-- The number of samples to average for CPU monitoring.
+    double_buffer = true,			-- Use the Xdbe extension? (eliminates flicker) It is highly recommended to use own window with this one so double buffer won't be so big.
+    net_avg_samples = 2,			-- The number of samples to average for net data
+    no_buffers = true,				-- Subtract (file system) buffers from used memory?
+    text_buffer_size=256,
+    update_interval = 2.0,			-- Update interval
+
+
+    --Placement
+
     alignment = 'top_right',
-    own_window_argb_visual = true,
-    own_window_argb_value = 50,
-    background = true,
+    gap_x = 10,
+    gap_y = 1200,
+    minimum_height = 5,
+    minimum_width = 30,
+
+
+    --Graphical
+    
     border_width = 1,
-    cpu_avg_samples = 2,
-    default_color = 'ffffff',
-    default_outline_color = '808080',
-    default_shade_color = '808080',
-    double_buffer = true,
     draw_borders = false,
     draw_graph_borders = true,
     draw_outline = false,
     draw_shades = false,
+    stippled_borders = 0,
+    show_graph_range = false,
+    show_graph_scale = false,
+
+
+    --Textual
+
     extra_newline = false,
-    font = 'Roboto Regular:size=10',
-    gap_x = 10,
-    gap_y = 50,
-    minimum_height = 5,
-    minimum_width = 30,
-    net_avg_samples = 2,
-    no_buffers = true,
+    font = 'Roboto Regular:size=10',    
+    font1 = 'FontAwesome',
+    short_units = true,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+
+
+    --Windows
+
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'dock',
+    own_window_transparent = true,
+    own_window_hints = undecorate,sticky,skip_taskbar,skip_pager,
+
+    --Colours
+
+    default_color = '#ffffff',
+    default_outline_color = '#808080',
+    default_shade_color = '#808080',
     out_to_console = false,
     out_to_ncurses = false,
     out_to_stderr = false,
     out_to_x = true,
-    own_window = true,
-    own_window_class = 'Conky',
-    own_window_type = 'override',
-    own_window_transparent = true,
-    show_graph_range = false,
-    show_graph_scale = false,
-    stippled_borders = 0,
-    update_interval = 2.0,
-    uppercase = false,
-    use_spacer = 'none',
-    use_xft = true,
-    text_buffer_size=256,
-    own_window_hints = undecorate,sticky,skip_taskbar,skip_pager,
-    font1 = 'FontAwesome',
-    
+    own_window_colour = '#ffd9d9',
+
 }
 
 
@@ -92,10 +116,10 @@ ${font :size=9}${color1}${top_mem name 2} ${color}${font} ${goto 80}${top_mem me
 ${font :size=9}${color1}${top_mem name 3} ${color}${font} ${goto 80}${top_mem mem 3} % ${goto 160}${top_mem cpu 3} %
 ${font :size=9}${color1}${top_mem name 4} ${color}${font} ${goto 80}${top_mem mem 4} % ${goto 160}${top_mem cpu 4} %
 ${font :size=9}${color1}${top_mem name 5} ${color}${font} ${goto 80}${top_mem mem 5} % ${goto 160}${top_mem cpu 5} %
-#${font :size=9}${color1}${top_mem name 6} ${color}${font} ${goto 80}${top_mem mem 6} % ${goto 160}${top cpu 6} %
-#${font :size=9}${color1}${top_mem name 7} ${color}${font} ${goto 80}${top_mem mem 7} % ${goto 160}${top cpu 7} %
-#${font :size=9}${color1}${top_mem name 8} ${color}${font} ${goto 80}${top_mem mem 8} % ${goto 160}${top cpu 8} %
-#${font :size=9}${color1}${top_mem name 9} ${color}${font} ${goto 80}${top_mem mem 9} % ${goto 160}${top cpu 9} %
+${font :size=9}${color1}${top_mem name 6} ${color}${font} ${goto 80}${top_mem mem 6} % ${goto 160}${top_mem cpu 6} %
+${font :size=9}${color1}${top_mem name 7} ${color}${font} ${goto 80}${top_mem mem 7} % ${goto 160}${top_mem cpu 7} %
+${font :size=9}${color1}${top_mem name 8} ${color}${font} ${goto 80}${top_mem mem 8} % ${goto 160}${top_mem cpu 8} %
+${font :size=9}${color1}${top_mem name 9} ${color}${font} ${goto 80}${top_mem mem 9} % ${goto 160}${top_mem cpu 9} %
 #${font :size=9}${color1}${top_mem name 10} ${color}${font} ${goto 160}${top mem 10} % ${goto 235}${top cpu 10} %
 
 ]]

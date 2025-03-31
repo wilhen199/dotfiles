@@ -5,16 +5,6 @@ configs:
 - level: 1
   monitors:
   - id: "d9f9bfa39e8c87a9ada430e03c6e5ce52eb7b37f"
-    display_name: "LG Electronics LG FULL HD 0x0008CE61 (DP-5)"
-    geometry:
-      x: 1920
-      y: 162
-      width: 1920
-      height: 1080
-  icons: {}
-- level: 1
-  monitors:
-  - id: "d9f9bfa39e8c87a9ada430e03c6e5ce52eb7b37f"
     display_name: "LG Electronics LG FULL HD 0x0008CE61 (DP-4)"
     geometry:
       x: 1920
@@ -47,6 +37,16 @@ configs:
     "/home/wilhen/Escritorio/boot":
       row: 3
       col: 0
+- level: 1
+  monitors:
+  - id: "d9f9bfa39e8c87a9ada430e03c6e5ce52eb7b37f"
+    display_name: "LG Electronics LG FULL HD 0x0008CE61 (DP-5)"
+    geometry:
+      x: 1920
+      y: 162
+      width: 1920
+      height: 1080
+  icons: {}
 - level: 0
   monitors:
   - id: "972d63895301a3b9ae437a6052ad429062a199f5"
