@@ -3,7 +3,7 @@
 Este repositorio contiene mis configuraciones personalizadas para **Linux** y **Windows**.
 
 📂 **Ramas disponibles:**
-- 🐧 **[Linux](https://github.com/wilhen199/dotfiles/tree/linux)** → Configuraciones para Arch Linux + XFCE + ZSH + TILIX + CONKY
+- 🐧 **[Linux](https://github.com/wilhen199/dotfiles/tree/linux)** → Configuraciones para Arch Linux + XFCE + ZSH + TILIX + CONKY + ROFI
 - 🖥️ **[Windows](https://github.com/wilhen199/dotfiles/tree/windows)** → Configuraciones para Windows Terminal y PowerShell
 
 ---
@@ -15,6 +15,8 @@ Este repositorio contiene mis configuraciones personalizadas para **Linux** y **
 | ![Linux Config](./img/Principal.png) | ![Windows Config](./img/Windows_Terminal.jpg) |
 | ![Linux Config](./img/Extendida.png) |
 | ![Linux Config](./img/Auxiliar.png) |
+| ![Linux Config](./img/rofi.png) |
+
 
 ---
 
