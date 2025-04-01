@@ -31,6 +31,6 @@ git clone -b linux https://github.com/wilhen199/dotfiles.git
 ```powershell
 git clone -b windows https://github.com/wilhen199/dotfiles.git
 ```
+✍️ **Wilhen | [GitHub](https://github.com/wilhen199) | [LinkedIn](https://www.linkedin.com/in/wilhen-figueredo/)**
 
----
 
