@@ -5,7 +5,7 @@ $branch = "windows"
 
 # Ubicaciones de los dotfiles
 $dotfiles = @{
-    "PowerShellPS_profile.ps1"         = "$PROFILE"
+    "PS_profile.ps1"         = "$PROFILE"
     "WT_settings.json" = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 }
 
