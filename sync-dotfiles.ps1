@@ -5,8 +5,8 @@ $branch = "windows"
 
 # Ubicaciones de los dotfiles
 $dotfiles = @{
-    "PowerShell_profile.ps1"         = "$PROFILE"
-    "windows_terminal_settings.json" = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    "PowerShellPS_profile.ps1"         = "$PROFILE"
+    "WT_settings.json" = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 }
 
 # Clonar o actualizar el repo
