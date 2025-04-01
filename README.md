@@ -59,9 +59,9 @@ source ~/.zshrc
 
 Aquí hay una vista previa de cómo debería verse la configuración después de la restauración:
 
-![Terminal con Powerlevel10k](../img/Extendida.png)
-![Configuración de Rofi y Conky](../img/rofi.png)
-![Escritorio con XFCE](../img/Principal.png)
+![Terminal con Powerlevel10k](../main/img/Extendida.png)
+![Configuración de Rofi y Conky](../main/img/rofi.png)
+![Escritorio con XFCE](../main/img/Principal.png)
 
 
 ---
