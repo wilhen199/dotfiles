@@ -221,6 +221,7 @@
         <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="vim.desktop"/>
@@ -230,7 +231,6 @@
         <value type="string" value="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"/>
         <value type="string" value="gparted.desktop"/>
         <value type="string" value="grub-customizer.desktop"/>
-        <value type="string" value="thunar-volman-settings.desktop"/>
       </property>
       <property name="launcher-show-name" type="bool" value="true"/>
       <property name="position-categories-horizontal" type="bool" value="true"/>
