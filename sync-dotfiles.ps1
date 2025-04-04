@@ -7,6 +7,7 @@ $branch = "windows"
 $dotfiles = @{
     "$PROFILE"                                                                                    = "PS_profile.ps1"
     "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = "WT_settings.json"
+    "$env:POSH_THEMES_PATH/WF.omp.json" = "WF.omp.json"
 }
 
 # Clonar o actualizar el repo
