@@ -47,7 +47,7 @@
       </property>
     </property>
     <property name="panel-2" type="empty">
-      <property name="position" type="string" value="p=0;x=982;y=1747"/>
+      <property name="position" type="string" value="p=0;x=2977;y=231"/>
       <property name="size" type="uint" value="90"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="10"/>
@@ -58,7 +58,7 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="autohide-behavior" type="uint" value="1"/>
       <property name="mode" type="uint" value="0"/>
-      <property name="output-name" type="string" value="eDP-1"/>
+      <property name="output-name" type="string" value="DP-4"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0.75"/>
