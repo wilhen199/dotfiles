@@ -130,7 +130,7 @@
     </property>
     <property name="tooltip-size" type="double" value="80"/>
     <property name="show-thumbnails" type="bool" value="true"/>
-    <property name="show-hidden-files" type="bool" value="false"/>
+    <property name="show-hidden-files" type="bool" value="true"/>
     <property name="use-custom-font-size" type="bool" value="false"/>
     <property name="show-tooltips" type="bool" value="true"/>
     <property name="icon-size" type="uint" value="48"/>

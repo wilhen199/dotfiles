@@ -4,6 +4,7 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <value type="int" value="2"/>
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=6;x=0;y=0"/>
@@ -33,7 +34,7 @@
       <property name="background-style" type="uint" value="1"/>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="span-monitors" type="bool" value="false"/>
-      <property name="output-name" type="string" value="Automatic"/>
+      <property name="output-name" type="string" value="DP-3"/>
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="mode" type="uint" value="0"/>
       <property name="length-adjust" type="bool" value="true"/>
@@ -44,6 +45,30 @@
         <value type="double" value="0"/>
         <value type="double" value="1"/>
       </property>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=0;x=982;y=1747"/>
+      <property name="size" type="uint" value="90"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="10"/>
+      </property>
+      <property name="length" type="double" value="1"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="span-monitors" type="bool" value="false"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="output-name" type="string" value="eDP-1"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.75"/>
+        <value type="double" value="0.25"/>
+        <value type="double" value="0.25"/>
+        <value type="double" value="0"/>
+      </property>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -221,8 +246,8 @@
         <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
       </property>
       <property name="recent" type="array">
-        <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="vim.desktop"/>
         <value type="string" value="chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop"/>
@@ -321,6 +346,15 @@
       <property name="workspace-scrolling" type="bool" value="false"/>
       <property name="miniature-view" type="bool" value="false"/>
       <property name="numbering" type="bool" value="false"/>
+    </property>
+    <property name="plugin-10" type="string" value="clock">
+      <property name="timezone" type="string" value="America/Bogota"/>
+      <property name="mode" type="uint" value="4"/>
+      <property name="flash-separators" type="bool" value="true"/>
+      <property name="show-meridiem" type="bool" value="false"/>
+      <property name="show-inactive" type="bool" value="false"/>
+      <property name="show-seconds" type="bool" value="true"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
     </property>
   </property>
 </channel>
