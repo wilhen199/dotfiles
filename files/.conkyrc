@@ -28,7 +28,7 @@ conky.config = {
 
     alignment = 'top_right',
     gap_x = 10,
-    gap_y = 1200,
+    gap_y = 30,
     minimum_height = 5,
     minimum_width = 30,
 
@@ -43,6 +43,7 @@ conky.config = {
     stippled_borders = 0,
     show_graph_range = false,
     show_graph_scale = false,
+    use_xft = true,
 
 
     --Textual
@@ -58,13 +59,17 @@ conky.config = {
 
     --Windows
 
+    own_window = true,
+    own_window_type = 'dock',	        -- normal, desktop, override, panel, or dock
+    own_window_transparent = true,
+    own_window_hints = undecorate,below,skip_taskbar,skip_pager,
     own_window_argb_visual = true,
     own_window_argb_value = 50,
-    own_window = true,
     own_window_class = 'Conky',
-    own_window_type = 'dock',
-    own_window_transparent = true,
-    own_window_hints = undecorate,sticky,skip_taskbar,skip_pager,
+    xinerama_head = 1,
+
+    
+    
 
     --Colours
 
