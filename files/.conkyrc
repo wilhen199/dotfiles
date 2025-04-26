@@ -27,10 +27,10 @@ conky.config = {
     --Placement
 
     alignment = 'top_right',
-    gap_x = 10,
-    gap_y = 30,
-    minimum_height = 5,
-    minimum_width = 30,
+    gap_x = 5,
+    gap_y = 50,
+    minimum_height = 50,
+    --minimum_width = 200,
 
 
     --Graphical
@@ -60,7 +60,7 @@ conky.config = {
     --Windows
 
     own_window = true,
-    own_window_type = 'dock',	        -- normal, desktop, override, panel, or dock
+    own_window_type = 'override',	        -- normal, desktop, override, panel, or dock
     own_window_transparent = true,
     own_window_hints = undecorate,below,skip_taskbar,skip_pager,
     own_window_argb_visual = true,
