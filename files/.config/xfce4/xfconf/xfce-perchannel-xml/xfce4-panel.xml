@@ -34,7 +34,7 @@
       <property name="background-style" type="uint" value="1"/>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="span-monitors" type="bool" value="false"/>
-      <property name="output-name" type="string" value="Automatic"/>
+      <property name="output-name" type="string" value="DP-3"/>
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="mode" type="uint" value="2"/>
       <property name="length-adjust" type="bool" value="true"/>
@@ -250,6 +250,7 @@
         <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
@@ -257,7 +258,6 @@
         <value type="string" value="chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop"/>
         <value type="string" value="org.gnome.Nautilus.desktop"/>
         <value type="string" value="mysql-workbench.desktop"/>
-        <value type="string" value="chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"/>
         <value type="string" value="gparted.desktop"/>
         <value type="string" value="grub-customizer.desktop"/>
       </property>
