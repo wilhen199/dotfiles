@@ -104,18 +104,18 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="DP-4" type="string" value="LG Electronics 22&quot;">
+    <property name="DP-4" type="string" value="LG Electronics 19&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="67de5a343b653704c9e15d798648fb3621bf647c"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="74.972502921564583"/>
+      <property name="EDID" type="string" value="1be5fef6bdfa5447ac1262bd25c1d3a18308946d"/>
+      <property name="Resolution" type="string" value="1366x768"/>
+      <property name="RefreshRate" type="double" value="59.789540816326529"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Scale" type="double" value="1"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="1920"/>
-        <property name="Y" type="int" value="0"/>
+        <property name="Y" type="int" value="312"/>
       </property>
     </property>
   </property>

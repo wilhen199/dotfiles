@@ -106,6 +106,7 @@ ${font} /home $#def1ed${fs_used /home}/${fs_size /home}
 $hr
 ${color 808080}${font FontAwesome} 
 ${color 808080}${font}External IP: $color${execi 1000 wget -q -O- http://ipecho.net/plain; echo}
+${color 808080}${font}Internal IP: $color${addr wlan0}
 ${color 808080}Señal: $#def1ed${wireless_link_qual_perc wlan0}% ${alignr}${wireless_link_bar 10,50 wlan0}
 $hr
 ${color 808080}${font FontAwesome}

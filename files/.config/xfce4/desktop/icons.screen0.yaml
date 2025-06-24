@@ -23,7 +23,7 @@ configs:
       row: 7
       col: 17
     "trash:///":
-      row: 8
+      row: 9
       col: 17
     "/home/wilhen/Escritorio/.2.themes":
       row: 1
@@ -52,6 +52,16 @@ configs:
       y: 162
       width: 1920
       height: 1080
+  icons: {}
+- level: 1
+  monitors:
+  - id: "96218424025b39234d155eb1a6abc0300935b874"
+    display_name: "LG Electronics LG HD 0x01010101 (DP-4)"
+    geometry:
+      x: 1920
+      y: 312
+      width: 1366
+      height: 768
   icons: {}
 - level: 0
   monitors:
