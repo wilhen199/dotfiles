@@ -19,27 +19,18 @@ Set-Location $repoPath
 git checkout $branch
 git pull origin $branch
 
-# Copiar archivos al repo
+# Restaurar archivos del repo a las ubicaciones locales
 foreach ($source in $dotfiles.Keys) {
     $target = $dotfiles[$source]
+    $repoFile = Join-Path $repoPath $source
 
-    if (Test-Path $source) {
-        Copy-Item -Path $source -Destination $target -Force
-        Write-Host "✅ Copiado: $source → $target"
+    if (Test-Path $repoFile) {
+        Copy-Item -Path $repoFile -Destination $target -Force
+        Write-Host "✅ Restaurado: $repoFile → $target"
     }
     else {
-        Write-Host "⚠️ Advertencia: No se encontró $source"
+        Write-Host "⚠️ Advertencia: No se encontró $repoFile en el repo"
     }
 }
 
-# Subir cambios automáticamente
-$changes = git status --porcelain
-if ($changes) {
-    git add .
-    git commit -m "🔄 Sincronización automática $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
-    git push origin $branch
-    Write-Host "✅ Dotfiles sincronizados y subidos a GitHub"
-}
-else {
-    Write-Host "✅ No hay cambios nuevos"
-}
+Write-Host "✅ Restauración de dotfiles completada."

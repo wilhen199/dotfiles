@@ -43,7 +43,7 @@
           "background": "#306998",
           "foreground": "#FFFFFF",
           "leading_diamond": "<transparent,#306998>\ue0b0</>",
-          "template": " \ue736 {{ .Venv }} ",
+          "template": " \ue235 {{ .Venv }} ",
           "properties": {
             "fetch_virtual_env": true
           },
