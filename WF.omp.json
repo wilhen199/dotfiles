@@ -38,6 +38,18 @@
           "type": "path"
         },
         {
+          "type": "python",
+          "style": "diamond",
+          "background": "#306998",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "<transparent,#306998>\ue0b0</>",
+          "template": " \ue736 {{ .Venv }} ",
+          "properties": {
+            "fetch_virtual_env": true
+          },
+          "trailing_diamond": "\ue0b0"
+        },
+        {
           "background": "#280C2E",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#7621DE{{ end }}",
