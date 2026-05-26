@@ -28,7 +28,14 @@
     ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "Hack Nerd Font"
+            },
+            "opacity": 95
+        },
         "list": 
         [
             {
