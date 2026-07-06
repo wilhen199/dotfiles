@@ -39,13 +39,13 @@
         },
         {
           "type": "python",
-          "style": "diamond",
+          "style": "powerline",
           "background": "#306998",
           "foreground": "#FFFFFF",
           "leading_diamond": "<transparent,#306998>\ue0b0</>",
           "template": "{{ if .Venv }} \ue235 {{ .Venv }} {{ end }}",
           "properties": {
-            "fetch_virtual_env": false
+            "fetch_virtual_env": true
           },
           "trailing_diamond": "\ue0b0"
         },
