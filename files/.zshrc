@@ -11,6 +11,7 @@ export PATH=$HOME:/usr/local/bin:$PATH
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
 # Path to your oh-my-zsh installation.
+ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -208,8 +209,6 @@ function copydir {
   print -n $PWD | clipcopy
 #  pwd | tr -d "\r\n" | clipcopy
 }
-
-#source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
