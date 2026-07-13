@@ -32,16 +32,19 @@ Antes de restaurar los dotfiles, asegúrate de instalar las siguientes herramien
 
 1️⃣ **Clonar el repositorio**:
 ```sh
-git clone https://github.com/wilhen199/dotfiles/tree/linux ~/dotfiles
+git clone -b linux https://github.com/wilhen199/dotfiles.git
 ```
 
 2️⃣ **Crear enlaces simbólicos** para que las configuraciones sean reconocidas por el sistema:
 ```sh
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/dotfiles/.config/rofi ~/.config/rofi
-ln -s ~/dotfiles/.config/xfce4 ~/.config/xfce4
-ln -s ~/dotfiles/.config/xfce4 ~/.config/thunar
+# Enlaces para la terminal y el prompt
+ln -s ~/dotfiles/files/.zshrc ~/.zshrc
+ln -s ~/dotfiles/files/.p10k.zsh ~/.p10k.zsh
+
+# Enlaces para la configuración de aplicaciones (Rofi, XFCE4, Thunar)
+ln -s ~/dotfiles/files/.config/rofi ~/.config/rofi
+ln -s ~/dotfiles/files/.config/xfce4 ~/.config/xfce4
+ln -s ~/dotfiles/files/.config/xfce4 ~/.config/thunar
 ```
 
 3️⃣ **Restaurar la configuración de Tilix** (si usas este terminal):
@@ -71,6 +74,6 @@ Aquí hay una vista previa de cómo debería verse la configuración después de
 - Para actualizar los dotfiles en el futuro:
   ```sh
   cd ~/dotfiles
-  git pull origin main
+  git pull origin linux
   ```
-✍️ **Wilhen | [GitHub](https://github.com/wilhen199) | [LinkedIn](https://www.linkedin.com/in/wilhen-figueredo/)**
+✍️ **Wilhen | [GitHub](https://github.com/wilhen199) | [LinkedIn](https://www.linkedin.com/in/wilhen-figueredo/)** | [CV-Digital](https://wilhenfigueredo.dev)
