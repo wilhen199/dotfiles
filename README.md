@@ -9,11 +9,11 @@ Antes de restaurar los dotfiles, asegúrate de instalar las siguientes herramien
 ### 🐧 Linux:
 1. **Zsh** (Shell alternativa a Bash) con oh-my-zsh
    ```sh
-   sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
    ```
 2. **Powerlevel10k** (Tema para Zsh)
    ```sh
-   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.local/share/powerlevel10k
+   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
    echo 'source ~/.local/share/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
    ```
 3. **Conky** (Monitor del sistema)
