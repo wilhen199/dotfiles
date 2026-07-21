@@ -17,6 +17,12 @@ function tfa { terraform apply $args }
 function tfd { terraform destroy $args }
 function tfi { terraform init $args }
 function gst { git status }
+function ll { ls -lh --group-dirs=first}
+function lls {lsd -lh --group-dirs=first --sort=time}
+function la { lsd -a --group-dirs=first }
+function l { lsd --group-dirs=first }
+function lla { lsd -lha --group-dirs=first }
+function ls { lsd --group-dirs=first --sort=time }
 
 # DO NOT MODIFY -- coreutils -- 60b36fc6-2d59-49df-be51-28dd2f4c3c9a
 # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

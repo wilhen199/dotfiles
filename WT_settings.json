@@ -65,6 +65,36 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{35c1a4b6-67e0-5927-87c3-8e133a3f2d7d}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{6e1383b9-da49-52b3-983a-3d4a084cdf90}",
+                "hidden": false,
+                "name": "archlinux",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{3fc818ef-e9f3-5332-a67c-f5625c43141b}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{4a1a6ba2-a993-5617-b497-ace376b9f293}",
+                "hidden": false,
+                "name": "archlinux",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{4b22497e-1e60-571f-afa8-51c34241615a}",
+                "hidden": false,
+                "name": "FedoraLinux-44",
+                "source": "Microsoft.WSL"
             }
         ]
     },
