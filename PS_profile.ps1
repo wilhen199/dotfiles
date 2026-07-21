@@ -9,6 +9,7 @@ function Load-TerminalIcons {
   Import-Module Terminal-Icons
 }
 
+Set-Alias -Name history -Value Get-FullHistory -Option AllScope -Force
 
 Set-Alias tf terraform
 function tfp { terraform plan $args }
@@ -23,6 +24,8 @@ function la { lsd -a --group-dirs=first }
 function l { lsd --group-dirs=first }
 function lla { lsd -lha --group-dirs=first }
 function ls { lsd --group-dirs=first --sort=time }
+function cat { bat.exe $args }
+function Get-FullHistory { bat (Get-PSReadLineOption).HistorySavePath }
 
 # DO NOT MODIFY -- coreutils -- 60b36fc6-2d59-49df-be51-28dd2f4c3c9a
 # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
