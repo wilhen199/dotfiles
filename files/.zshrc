@@ -81,7 +81,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search)
+plugins=(git web-search sudo)
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -127,19 +127,25 @@ source ~/.oh-my-zsh/custom/plugins/terraform/terraform.zsh
 alias zshconfig="nano ~/.zshrc"
 alias vimzsh="vim ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
+alias cat='bat'
+alias powerlevel='nano ~/.p10k.zsh'
+alias catzsh="cat ~/.zshrc"
+
+
+# LS (lsd) alias
+alias l='lsd --group-dirs=first'
+alias ls='lsd --group-dirs=first --sort=time'
 alias ll='lsd -lh --group-dirs=first'
 alias lls='lsd -lh --group-dirs=first --sort=time'
 alias la='lsd -a --group-dirs=first'
-alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
-alias ls='lsd --group-dirs=first --sort=time'
-alias cat='bat'
-alias powerlevel='nano ~/.p10k.zsh'
+
+
 alias install='sudo pacman -S'
 alias uninstall='sudo pacman -R'
 #alias update-paru='paru -S $(paru -Qua | awk '{print $1}')'
 alias ..="cd .."
-alias ...="cd ..."
+alias ...="cd ../.."
 alias df="df -h"
 alias myip="hostname -i"
 alias ppg="ping -c 10 8.8.8.8"
