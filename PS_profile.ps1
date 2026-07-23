@@ -29,6 +29,9 @@ function ll { lsd -lh --group-dirs=first}
 function lls {lsd -lh --group-dirs=first --sort=time}
 function la { lsd -a --group-dirs=first }
 function lla { lsd -lha --group-dirs=first }
+function .. { cd .. }
+function ... { cd ../.. }
+function df { df -h }
 
 # Configuración permanente de FZF
 Import-Module PSFzf
