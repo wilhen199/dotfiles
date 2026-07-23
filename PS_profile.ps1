@@ -21,12 +21,14 @@ function tfa { terraform apply $args }
 function tfd { terraform destroy $args }
 function tfi { terraform init $args }
 function gst { git status }
-function ll { ls -lh --group-dirs=first}
+
+# LS (lsd) alias (installed from https://github.com/lsd-rs/lsd)
+function l { lsd --group-dirs=first }
+function ls { lsd --group-dirs=first --sort=time }
+function ll { lsd -lh --group-dirs=first}
 function lls {lsd -lh --group-dirs=first --sort=time}
 function la { lsd -a --group-dirs=first }
-function l { lsd --group-dirs=first }
 function lla { lsd -lha --group-dirs=first }
-function ls { lsd --group-dirs=first --sort=time }
 
 # Configuración permanente de FZF
 Import-Module PSFzf
