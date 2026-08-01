@@ -1,6 +1,6 @@
 # Configuración
 $repoURL = "https://github.com/wilhen199/dotfiles.git"
-$repoPath = "C:\dotfiles"
+$repoPath = "$env:USERPROFILE\dotfiles"
 $branch = "windows"
 
 # Ubicaciones de los dotfiles
