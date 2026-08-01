@@ -12,7 +12,7 @@ Este repositorio contiene mis configuraciones personalizadas para **Linux** y **
 
 | Linux | Windows |
 |-------|---------|
-| ![Linux Config](./img/Principal.png) | ![Windows Config](./img/Windows_Terminal.jpg) |
+| ![Linux Config](./img/Principal.png) | ![Windows Config](./img/Windows_Terminal.png) |
 | ![Linux Config](./img/Extendida.png) |
 | ![Linux Config](./img/Auxiliar.png) |
 | ![Linux Config](./img/rofi.png) |
