@@ -83,22 +83,26 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git web-search sudo)
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-source /usr/share/zsh-sudo/sudo.plugin.zsh
-
-source /usr/share/zsh/plugins/zsh-copydir/copydir.plugin.zsh
-
-source /usr/share/zsh/plugins/zsh-copyfile/copyfile.plugin.zsh
-
 source $ZSH/oh-my-zsh.sh
 
-source /opt/azure-cli/az.completion
+# PLUGINS
+# sudo pacman -S zsh-syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# sudo pacman -S zsh-syntax-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh -o /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
+source /usr/share/plugins/zsh-sudo/sudo.plugin.zsh
+# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copypath/copypath.plugin.zsh -o /usr/share/zsh/plugins/zsh-copydir/copydir.plugin.zsh
+source /usr/share/zsh/plugins/zsh-copydir/copydir.plugin.zsh
+# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copyfile/copyfile.plugin.zsh -o /usr/share/zsh/plugins/zsh-copyfile/copyfile.plugin.zsh
+source /usr/share/zsh/plugins/zsh-copyfile/copyfile.plugin.zsh
+
+# Azure CLI completation
+#source /opt/azure-cli/az.completion
 #source /usr/share/zsh/plugins/azure-cli/az.completation
 
-source ~/.oh-my-zsh/custom/plugins/terraform/terraform.zsh
+# Terraform
+#source ~/.oh-my-zsh/custom/plugins/terraform/terraform.zsh
 #source /usr/share/zsh/plugins/terraform/terraform.zsh
 
 # User configuration
@@ -122,15 +126,21 @@ source ~/.oh-my-zsh/custom/plugins/terraform/terraform.zsh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
+
+
+# ALIASES
+# General
 alias zshconfig="nano ~/.zshrc"
 alias vimzsh="vim ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias cat='bat'
 alias powerlevel='nano ~/.p10k.zsh'
 alias catzsh="cat ~/.zshrc"
-
+alias ..="cd .."
+alias ...="cd ../.."
+alias df="df -h"
+alias myip="hostname -i"
+alias ppg="ping -c 10 8.8.8.8"
 
 # LS (lsd) alias
 alias l='lsd --group-dirs=first'
@@ -140,46 +150,30 @@ alias lls='lsd -lh --group-dirs=first --sort=time'
 alias la='lsd -a --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 
-
+# Arch
 alias install='sudo pacman -S'
 alias uninstall='sudo pacman -R'
+alias update='sudo pacman -Syyu'
 #alias update-paru='paru -S $(paru -Qua | awk '{print $1}')'
-alias ..="cd .."
-alias ...="cd ../.."
-alias df="df -h"
-alias myip="hostname -i"
-alias ppg="ping -c 10 8.8.8.8"
-alias fortistatus="fortivpn status"
-alias fortidisc="fortivpn disconnect"
+
+# Terraform
 alias tf="terraform"
 alias tfval="terraform validate"
 alias tfplan="terraform plan"
 alias tfap="terraform apply"
-alias gs="git status"
+
+# Git
+alias gst="git status"
+alias gss="git status --short"
+alias gd="git diff"
+alias gaa="git add --all"
+alias gcmsg="git commit -m"
+alias ggcheck="git checkout"
+alias ggpush="git push origin '$(git_current_branch)'"
+alias ggpull="git pull origin '$(git_current_branch)'"
 
 
-# Functions
-#function mkt(){
-#	mkdir {nmap,content,exploits,scripts}
-#}
-
-function rmk(){
-	scrub -p dod $1
-	shred -zun 10 -v $1
-}
-function updater(){
-	sudo pacman -Syyu
-	
-}
-function parup(){
-	package=$(paru -Qua | awk '{print $1}' | sed 's/\x1B\[[0-9;]*m//g')
-	if [ -n "$package" ]; then
-		echo "$package"
-#		paru -S "$package" 1> /dev/null
-	else
-		echo "No se encontraron paquetes para instalar."
-	fi
-}
+# FUNCTIONS
 # Ejecutar un comando que produce salida en stdout y stderr
 ##resultado=$(comando)
 
@@ -192,6 +186,10 @@ function parup(){
     # Aquí puedes manejar la lógica cuando no hay error
 ##fi
 
+function rmk(){
+	scrub -p dod $1
+	shred -zun 10 -v $1
+}
 
 function cd {
   builtin cd "$@" && ls
