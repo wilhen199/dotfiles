@@ -1,7 +1,7 @@
-# Deshabilitar el prompt nativo de Python VirtualEnv para que Oh My Posh tome el control
+# Disable Python VirtualEnv native prompt so Oh My Posh takes control
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
 
-# Oh My Posh primero
+# Oh My Posh first
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/WF.omp.json" | Invoke-Expression
 
 # Lazy load
@@ -32,7 +32,7 @@ function .. { cd .. }
 function ... { cd ../.. }
 function df { df -h }
 
-# Configuración permanente de FZF
+# Permanent FZF configuration
 Import-Module PSFzf
 Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 Set-PsFzfOption -TabExpansion -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
