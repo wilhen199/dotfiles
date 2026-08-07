@@ -20,7 +20,6 @@ function tfval { terraform validate }
 function tfa { terraform apply $args }
 function tfd { terraform destroy $args }
 function tfi { terraform init $args }
-function gst { git status }
 
 # LS (lsd) alias (installed from https://github.com/lsd-rs/lsd)
 function l { lsd --group-dirs=first }
@@ -38,6 +37,15 @@ Import-Module PSFzf
 Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 Set-PsFzfOption -TabExpansion -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
 
+# Git 
+function gst { git status }
+function gss{ git status --short }
+function gd{ git diff }
+function gaa{ git add --all }
+function gcmsg{ git commit -m }
+function ggcheck{ git checkout }
+function ggpush{ git push }
+function ggpull{ git pull }
 
 # DO NOT MODIFY -- coreutils -- 60b36fc6-2d59-49df-be51-28dd2f4c3c9a
 # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
