@@ -87,15 +87,15 @@ source $ZSH/oh-my-zsh.sh
 
 # PLUGINS
 # sudo pacman -S zsh-syntax-highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # sudo pacman -S zsh-syntax-autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh -o /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
-source /usr/share/plugins/zsh-sudo/sudo.plugin.zsh
-# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copypath/copypath.plugin.zsh -o /usr/share/zsh/plugins/zsh-copydir/copydir.plugin.zsh
-source /usr/share/zsh/plugins/zsh-copydir/copydir.plugin.zsh
-# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copyfile/copyfile.plugin.zsh -o /usr/share/zsh/plugins/zsh-copyfile/copyfile.plugin.zsh
-source /usr/share/zsh/plugins/zsh-copyfile/copyfile.plugin.zsh
+source /usr/share/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh -o /usr/share/zsh-plugins/zsh-sudo/sudo.plugin.zsh
+source /usr/share/zsh-plugins/zsh-sudo/sudo.plugin.zsh
+# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copypath/copypath.plugin.zsh -o /usr/share/zsh-plugins/zsh-copydir/copydir.plugin.zsh
+source /usr/share/zsh-plugins/zsh-copydir/copydir.plugin.zsh
+# curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copyfile/copyfile.plugin.zsh -o /usr/share/zsh-plugins/zsh-copyfile/copyfile.plugin.zsh
+source /usr/share/zsh-plugins/zsh-copyfile/copyfile.plugin.zsh
 
 # Azure CLI completation
 #source /opt/azure-cli/az.completion
@@ -155,6 +155,11 @@ alias install='sudo pacman -S'
 alias uninstall='sudo pacman -R'
 alias update='sudo pacman -Syyu'
 #alias update-paru='paru -S $(paru -Qua | awk '{print $1}')'
+
+# Fedora
+alias install='sudo dnf install'
+alias uninstall='sudo dnf uninstall'
+alias update='sudo dnf update && sudo dnf upgrade'
 
 # Terraform
 alias tf="terraform"
