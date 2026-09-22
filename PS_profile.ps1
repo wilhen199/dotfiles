@@ -21,11 +21,26 @@ function tfa { terraform apply $args }
 function tfd { terraform destroy $args }
 function tfi { terraform init $args }
 
+# Terraform Completer
+Register-ArgumentCompleter -Native -CommandName terraform, tf -ScriptBlock {
+  param($commandName, $wordToComplete, $cursorPosition)
+  $env:COMP_LINE = $wordToComplete
+  if ($env:COMP_LINE.Length -lt $cursorPosition) {
+    $env:COMP_LINE = $env:COMP_LINE + " "
+  }
+  $env:COMP_POINT = $cursorPosition
+  terraform -autocomplete | ForEach-Object {
+    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
+  }
+  Remove-Item Env:\COMP_LINE
+  Remove-Item Env:\COMP_POINT
+}
+
 # LS (lsd) alias (installed from https://github.com/lsd-rs/lsd)
 function l { lsd --group-dirs=first }
 function ls { lsd --group-dirs=first --sort=time }
-function ll { lsd -lh --group-dirs=first}
-function lls {lsd -lh --group-dirs=first --sort=time}
+function ll { lsd -lh --group-dirs=first }
+function lls { lsd -lh --group-dirs=first --sort=time }
 function la { lsd -a --group-dirs=first }
 function lla { lsd -lha --group-dirs=first }
 function .. { cd .. }
@@ -41,11 +56,29 @@ Set-PsFzfOption -TabExpansion -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChord
 function gst { git status }
 function gss { git status --short }
 function gd { git diff }
-function gaa { git add --all }
-function gcmsg { git commit -m }
-function ggcheck { git checkout }
+function gaa { git add @args }
+function gcmsg { git commit }
+function ggcheck { git checkout @args }
 function ggpush { git push }
 function ggpull { git pull }
+function ggbranches { git branch -a }
+function gdelbranc { git branch -d @args }
+function gpush { git push @args }
+
+# AWS Completer
+Register-ArgumentCompleter -Native -CommandName aws -ScriptBlock {
+  param($commandName, $wordToComplete, $cursorPosition)
+  $env:COMP_LINE = $wordToComplete
+  if ($env:COMP_LINE.Length -lt $cursorPosition) {
+    $env:COMP_LINE = $env:COMP_LINE + " "
+  }
+  $env:COMP_POINT = $cursorPosition
+  aws_completer.exe | ForEach-Object {
+    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
+  }
+  Remove-Item Env:\COMP_LINE     
+  Remove-Item Env:\COMP_POINT  
+}
 
 # DO NOT MODIFY -- coreutils -- 60b36fc6-2d59-49df-be51-28dd2f4c3c9a
 # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
