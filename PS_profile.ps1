@@ -23,6 +23,7 @@ function tfval { terraform validate }
 function tfa { terraform apply $args }
 function tfd { terraform destroy $args }
 function tfi { terraform init $args }
+function tfw { terraform workspace $args }
 
 # Terraform Completer
 Register-ArgumentCompleter -Native -CommandName terraform, tf -ScriptBlock {

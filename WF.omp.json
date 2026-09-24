@@ -69,6 +69,17 @@
           "type": "git"
         },
         {
+          "type": "terraform",
+          "style": "powerline",
+          "foreground": "#FFFFFF",
+          "background": "#844FBA",
+          "powerline_symbol": "\ue0b0",
+          "template": " {{ if ne .WorkspaceName \"default\"}}  {{ .WorkspaceName }}{{ end }} ",
+          "properties": {
+            "fetch_terraform_workspace": true
+          }
+        },
+        {
           "background": "#26BDBB",
           "foreground": "#0C212F",
           "leading_diamond": "<transparent,#26BDBB>\ue0b0</>",
