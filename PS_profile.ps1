@@ -13,6 +13,9 @@ function Load-TerminalIcons {
 Set-Alias -Name history -Value Get-FullHistory -Option AllScope -Force
 function Get-FullHistory { bat (Get-PSReadLineOption).HistorySavePath }
 
+Set-Alias -Name histcode -Value Open-FullHistory -Option AllScope -Force
+function Open-FullHistory { code (Get-PSReadLineOption).HistorySavePath }
+
 # Terraform
 Set-Alias tf terraform
 function tfp { terraform plan $args }
