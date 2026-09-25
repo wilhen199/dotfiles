@@ -243,7 +243,8 @@ fi
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
-complete -C '/usr/local/bin/aws_completer' aws
+#complete -C '/usr/local/bin/aws_completer' aws
+complete -C '/bin/aws_completer' aws
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 

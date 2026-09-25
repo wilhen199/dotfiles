@@ -1265,10 +1265,12 @@
   #
   # For example, given these settings:
   #
-  #   typeset -g POWERLEVEL9K_TERRAFORM_CLASSES=(
-  #     '*prod*'  PROD
-  #     '*test*'  TEST
-  #     '*'       OTHER)
+     typeset -g POWERLEVEL9K_TERRAFORM_CLASSES=(
+       '*prod*'  PROD
+       '*test*'  TEST
+       '*'       OTHER)
+
+     typeset -g POWERLEVEL9K_TERRAFORM_VISUAL_IDENTIFIER_EXPANSION='󱁢'
   #
   # If your current terraform workspace is "project_test", its class is TEST because "project_test"
   # doesn't match the pattern '*prod*' but does match '*test*'.
