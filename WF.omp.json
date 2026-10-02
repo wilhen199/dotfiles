@@ -39,10 +39,10 @@
         },
         {
           "type": "python",
-          "style": "powerline",
+          "style": "diamond",
           "background": "#306998",
           "foreground": "#FFFFFF",
-          "leading_diamond": "<transparent,#306998>\ue0b0</>",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
           "template": "{{ if .Venv }} \ue235 {{ .Venv }} {{ end }}",
           "properties": {
             "fetch_virtual_env": true
@@ -58,22 +58,24 @@
             "{{ if gt .Behind 0 }}#7621DE{{ end }}"
           ],
           "foreground": "#FFFFFF",
-          "powerline_symbol": "\ue0b0",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
           "properties": {
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
-          "style": "powerline",
+          "style": "diamond",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
         {
           "type": "terraform",
-          "style": "powerline",
+          "style": "diamond",
           "foreground": "#FFFFFF",
           "background": "#844FBA",
-          "powerline_symbol": "\ue0b0",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
           "template": " {{ if ne .WorkspaceName \"default\"}}  {{ .WorkspaceName }}{{ end }} ",
           "properties": {
             "fetch_terraform_workspace": true
