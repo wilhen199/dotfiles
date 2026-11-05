@@ -161,6 +161,11 @@ alias install='sudo dnf install'
 alias uninstall='sudo dnf uninstall'
 alias update='sudo dnf update && sudo dnf upgrade'
 
+# Ubuntu
+alias install='sudo apt install'
+alias uninstall='sudo apt uninstall'
+alias update='sudo apt update && sudo apt upgrade'
+
 # Terraform
 alias tf="terraform"
 alias tfval="terraform validate"
