@@ -16,6 +16,10 @@ function Get-FullHistory { bat (Get-PSReadLineOption).HistorySavePath }
 Set-Alias -Name histcode -Value Open-FullHistory -Option AllScope -Force
 function Open-FullHistory { code (Get-PSReadLineOption).HistorySavePath }
 
+# winget
+Set-Alias -Name wupgrade -Value winget-get-upgrade -Option AllScope -Force
+function winget-get-upgrade { winget upgrade --all --include-unknown --silent --accept-package-agreements --accept-source-agreements --force }
+
 # Terraform
 Set-Alias tf terraform
 function tfp { terraform plan $args }
