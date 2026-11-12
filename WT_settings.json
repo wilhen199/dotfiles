@@ -59,7 +59,8 @@
                 "name": "FedoraLinux-44",
                 "source": "Microsoft.WSL",
                 "suppressApplicationTitle": true,
-                "tabTitle": "Fedora"
+                "tabTitle": "Fedora",
+                "icon": "C:\\Users\\wilhen\\AppData\\Local\\wsl\\{46ff0c7a-c2e5-4a44-ae9d-946b09486e5c}\\shortcut.ico"
             },
             {
                 "colorScheme": "Campbell",
@@ -68,7 +69,8 @@
                 "name": "Ubuntu",
                 "source": "Microsoft.WSL",
                 "tabColor": null,
-                "tabTitle": "zqz"
+                "tabTitle": "zqz",
+                "icon": "C:\\Users\\wilhen\\AppData\\Local\\wsl\\{a2e545ea-db9b-4d7b-b50b-2c4b3e6ed278}\\shortcut.ico"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
