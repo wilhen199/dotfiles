@@ -1,3 +1,8 @@
+############################################################################################
+#    SYNC: Copies dotfiles FROM this local machine to the repo, then commits and pushes.
+#    Run this after you change a config file locally and want to save that change to GitHub.
+############################################################################################
+
 # Configuration
 $repoURL = "https://github.com/wilhen199/dotfiles.git"
 $repoPath = "$env:USERPROFILE\dotfiles"

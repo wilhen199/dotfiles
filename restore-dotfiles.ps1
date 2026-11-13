@@ -1,3 +1,8 @@
+###################################################################################################
+#    RESTORE: Copies dotfiles FROM repo TO this local machine.
+#    Run this after you edit a file inside the dotfiles repo and what that change applied locally.
+###################################################################################################
+
 # Configuration
 $repoURL = "https://github.com/wilhen199/dotfiles.git"
 $repoPath = "$env:USERPROFILE\dotfiles"
