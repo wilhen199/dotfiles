@@ -7,7 +7,7 @@ $branch = "windows"
 $dotfiles = @{
     "$PROFILE"                                                                                    = "PS_profile.ps1"
     "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = "WT_settings.json"
-    "$env:POSH_THEMES_PATH/WF.omp.json" = "WF.omp.json"
+    "$env:POSH_THEMES_PATH/WF.omp.json"                                                           = "WF.omp.json"
 }
 
 # Clone or update the repo
@@ -19,13 +19,14 @@ Set-Location $repoPath
 git checkout $branch
 git pull origin $branch
 
-# Copiar archivos al repo
+# Copy files into repo
 foreach ($source in $dotfiles.Keys) {
     $target = $dotfiles[$source]
+    $repoFile = Join-Path $repoPath $target
 
     if (Test-Path $source) {
-        Copy-Item -Path $source -Destination $target -Force
-        Write-Host "✅ Copied: $source → $target"
+        Copy-Item -Path $source -Destination $repoFile -Force
+        Write-Host "✅ Copied: $source → $repoFile"
     }
     else {
         Write-Host "⚠️ Warning: $source not found"
