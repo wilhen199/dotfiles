@@ -1,23 +1,41 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
+    "actions":
+    [
+        {
+            "command":
+            {
+                "action": "globalSummon",
+                "monitor": "toMouse"
+            },
+            "id": "User.globalSummon.51A3D78C"
+        }
+    ],
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "disabledProfileSources": [
+    "disabledProfileSources":
+    [
         "Windows.Terminal.VisualStudio",
         "Windows.Terminal.Azure"
     ],
-    "keybindings": [
+    "initialCols": 120,
+    "initialRows": 40,
+    "keybindings":
+    [
         {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
+            "id": "User.globalSummon.51A3D78C",
+            "keys": "ctrl+alt+t"
         },
         {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
         },
         {
             "id": "Terminal.CopyToClipboard",
@@ -28,29 +46,37 @@
             "keys": "alt+shift+d"
         }
     ],
-    "launchMode": "maximized",
-    "newTabMenu": [
+    "launchMode": "default",
+    "newTabMenu":
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
-            "font": {
+    "profiles":
+    {
+        "defaults":
+        {
+            "font":
+            {
                 "face": "Hack Nerd Font"
             },
-            "opacity": 95
+            "opacity": 95,
+            "tabTitle": "Wilhen"
         },
-        "list": [
+        "list":
+        [
             {
-                "font": {
+                "font":
+                {
                     "face": "Hack Nerd Font"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore",
-                "suppressApplicationTitle": true
+                "suppressApplicationTitle": true,
+                "tabTitle": "Windows"
             },
             {
                 "guid": "{4b22497e-1e60-571f-afa8-51c34241615a}",
