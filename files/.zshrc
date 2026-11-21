@@ -165,7 +165,6 @@ if [ "$DISTRO_ID" = "arch" ] || [[ " $DISTRO_LIKE " == *" arch "* ]]; then
     alias install='sudo pacman -S'
     alias uninstall='sudo pacman -R'
     alias update='sudo pacman -Syu'
-    alias cat='batcat'
 elif [ "$DISTRO_ID" = "fedora" ] || [[ " $DISTRO_LIKE " == *" fedora "* ]]; then
     alias install='sudo dnf install'
     alias uninstall='sudo dnf remove'
@@ -174,6 +173,7 @@ elif [ "$DISTRO_ID" = "ubuntu" ] || [ "$DISTRO_ID" = "debian" ] || [[ " $DISTRO_
     alias install='sudo apt install'
     alias uninstall='sudo apt remove'
     alias update='sudo apt update && sudo apt upgrade'
+    alias cat='batcat'
 else
     echo "Unrecognized distribution ($DISTRO_ID): package aliases were not configured."
 fi
