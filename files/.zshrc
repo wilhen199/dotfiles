@@ -81,7 +81,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search sudo copydir copyfile)
+plugins=(git web-search sudo copyfile)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,11 +91,11 @@ source /usr/share/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # sudo pacman -S zsh-syntax-autosuggestions
 source /usr/share/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh -o /usr/share/zsh-plugins/zsh-sudo/sudo.plugin.zsh
-source /usr/share/zsh-plugins/zsh-sudo/sudo.plugin.zsh
+#source /usr/share/zsh-plugins/zsh-sudo/sudo.plugin.zsh
 # curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copypath/copypath.plugin.zsh -o /usr/share/zsh-plugins/zsh-copydir/copydir.plugin.zsh
-source /usr/share/zsh-plugins/zsh-copydir/copydir.plugin.zsh
+#source /usr/share/zsh-plugins/zsh-copydir/copydir.plugin.zsh
 # curl -sL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/refs/heads/master/plugins/copyfile/copyfile.plugin.zsh -o /usr/share/zsh-plugins/zsh-copyfile/copyfile.plugin.zsh
-source /usr/share/zsh-plugins/zsh-copyfile/copyfile.plugin.zsh
+#source /usr/share/zsh-plugins/zsh-copyfile/copyfile.plugin.zsh
 
 # Azure CLI completation
 #source /opt/azure-cli/az.completion
@@ -150,21 +150,33 @@ alias lls='lsd -lh --group-dirs=first --sort=time'
 alias la='lsd -a --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 
-# Arch
-alias install='sudo pacman -S'
-alias uninstall='sudo pacman -R'
-alias update='sudo pacman -Syyu'
-#alias update-paru='paru -S $(paru -Qua | awk '{print $1}')'
+# Distro detection
+# Read the distribution ID from /etc/os-release (e.g. arch, fedora, ubuntu).
+if [ -r /etc/os-release ]; then
+    DISTRO_ID=$(. /etc/os-release && echo "$ID")
+    DISTRO_LIKE=$(. /etc/os-release && echo "$ID_LIKE")
+else
+    DISTRO_ID="unknown"
+    DISTRO_LIKE=""
+fi
 
-# Fedora
-alias install='sudo dnf install'
-alias uninstall='sudo dnf uninstall'
-alias update='sudo dnf update && sudo dnf upgrade'
-
-# Ubuntu
-alias install='sudo apt install'
-alias uninstall='sudo apt uninstall'
-alias update='sudo apt update && sudo apt upgrade'
+# Package Manager
+if [ "$DISTRO_ID" = "arch" ] || [[ " $DISTRO_LIKE " == *" arch "* ]]; then
+    alias install='sudo pacman -S'
+    alias uninstall='sudo pacman -R'
+    alias update='sudo pacman -Syu'
+    alias cat='batcat'
+elif [ "$DISTRO_ID" = "fedora" ] || [[ " $DISTRO_LIKE " == *" fedora "* ]]; then
+    alias install='sudo dnf install'
+    alias uninstall='sudo dnf remove'
+    alias update='sudo dnf upgrade --refresh'
+elif [ "$DISTRO_ID" = "ubuntu" ] || [ "$DISTRO_ID" = "debian" ] || [[ " $DISTRO_LIKE " == *" debian "* ]]; then
+    alias install='sudo apt install'
+    alias uninstall='sudo apt remove'
+    alias update='sudo apt update && sudo apt upgrade'
+else
+    echo "Unrecognized distribution ($DISTRO_ID): package aliases were not configured."
+fi
 
 # Terraform
 alias tf="terraform"
