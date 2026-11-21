@@ -6,7 +6,7 @@ Customize your Windows Terminal with **Oh My Posh** for a more attractive and fu
 
 ## 📑 Index
 
-- [📌 Pre-requierements](#pre-requierements)
+- [📌 Prerequisites ](#pre-req)
 - [What kind of instalation do you want?](#what-installation)
   - [📂 Manual](#manual)
   - [📂 Automated](#auto)
@@ -15,7 +15,7 @@ Customize your Windows Terminal with **Oh My Posh** for a more attractive and fu
 
 ---
 
-## 📌 Pre-requisitos <a id="pre-requierements"></a>
+## 📌 Pre-requisitos <a id="pre-req"></a>
 
 Before restore dotfiles, ensure you have the following tools installed:
 
@@ -47,6 +47,8 @@ Before restore dotfiles, ensure you have the following tools installed:
 
 - 🖐️ [Manual](#manual) — total control, step by step (only visual configurations).
 - ⚡ [Automated](#auto) — script that install dependencies and configuration, everything in one go.
+
+[⬆️ Back to index](#-index)
 
 ---
 
@@ -113,6 +115,8 @@ Here is a preview of how the configuration should look after the restoration:
 - You can further customize your prompt by editing the theme configuration file (`.omp.json`).
 - Oh My Posh also allows to use custom segments to display additional information in your prompt.
 - Check [Oh My Posh docs](https://ohmyposh.dev/docs/) para learn more.
+
+[⬆️ Back to index](#-index)
 
 ---
 
