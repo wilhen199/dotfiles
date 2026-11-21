@@ -191,8 +191,8 @@ alias gd="git diff"
 alias gaa="git add --all"
 alias gcmsg="git commit"
 alias ggcheck="git checkout"
-alias ggpush='git push origin "$(git_current_branch)"'
-alias ggpull='git pull origin "$(git_current_branch)"'
+alias ggpush="git push"
+alias ggpull="git pull"
 
 # COLORS
 typeset -A ZSH_HIGHLIGHT_STYLES
