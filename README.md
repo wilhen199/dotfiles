@@ -1,114 +1,133 @@
-# 🚀 Dotfiles de Windows - Restauración y Configuración
+# 🪟 Windows dotfiles - Restore and configuration
 
-Personaliza tu Windows Terminal con **Oh My Posh** para tener un prompt más atractivo y funcional, replicando la configuración de este repositorio en minutos.
-
----
-
-## 📑 Tabla de Contenidos
-
-- [📌 Pre-requisitos](#pre-requisitos)
-- [¿Qué tipo de instalación quieres?](#que-tipo-de-instalacion-quieres)
-  - [📂 Instalación Manual](#instalacion-manual)
-  - [📂 Instalación Automática](#instalacion-automatica)
-- [🖼 Capturas de Pantalla](#capturas-de-pantalla)
-- [📢 Notas Adicionales](#notas-adicionales)
+Customize your Windows Terminal with **Oh My Posh** for a more attractive and functional prompt, replicating the configuration of this repository in minutes.
 
 ---
 
-## 📌 Pre-requisitos <a id="pre-requisitos"></a>
+## 📑 Index
 
-Antes de restaurar los dotfiles, asegúrate de instalar las siguientes herramientas:
+- [📌 Pre-requierements](#pre-requierements)
+- [What kind of instalation do you want?](#what-installation)
+  - [📂 Manual](#manual)
+  - [📂 Automated](#auto)
+- [🖼️ Screenshots](#screenshots)
+- [📢 Notes](#-notes)
 
-🖥 Windows:
+---
 
-1. [Windows Terminal](https://www.microsoft.com/es-es/p/windows-terminal/9n0dx20hk701) Instalar desde Microsoft Store.
-2. [PowerShell 7 o superior](https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+## 📌 Pre-requisitos <a id="pre-requierements"></a>
+
+Before restore dotfiles, ensure you have the following tools installed:
+
+1. [Windows Terminal](https://www.microsoft.com/es-es/p/windows-terminal/9n0dx20hk701) Install from Microsoft Store.
+
+2. [PowerShell 7 or higher](https://learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+
    ```bash
    winget install --id Microsoft.PowerShell --source winget
    ```
+
 3. [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (Hack Nerd Font).
-4. [Oh My Posh](https://ohmyposh.dev/docs/) (Usando `winget`)
+
+4. [Oh My Posh](https://ohmyposh.dev/docs/) (Using`winget`)
+
    ```bash
    winget install JanDeDobbeleer.OhMyPosh -s winget --accept-package-agreements --accept-source-agreements
    ```
 
-> 💡 **Tip:** si al ejecutar `install.ps1` te aparece un error de política de ejecución, corre PowerShell como Administrador y ejecuta:
-> ```powershell
-> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-> ```
+> 💡 **Tip:** If `install.ps1` shows an error when you run it, try to run it with elevated privileges:
+
+ ```powershell
+ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+ ```
 
 ---
 
-## 📑 ¿Qué tipo de instalación quieres? <a id="que-tipo-de-instalacion-quieres"></a>
+## 📑 What kind of installation do you want? <a id="what-installation"></a>
 
-- 🖐️ [Instalación Manual](#instalacion-manual) — control total, paso a paso.
-- ⚡ [Instalación Automática](#instalacion-automatica) — un script hace todo por ti.
+- 🖐️ [Manual](#manual) — total control, step by step (only visual configurations).
+- ⚡ [Automated](#auto) — script that install dependencies and configuration, everything in one go.
 
 ---
 
-### 📂 Instalación Manual <a id="instalacion-manual"></a>
+### 📂 Manual Installation <a id="manual"></a>
 
-1️⃣ **Clonar el repositorio**:
+1️⃣ **Clone the repository**:
 
 ```bash
 git clone -b windows https://github.com/wilhen199/dotfiles.git dotfiles
 ```
 
-2️⃣ **Ubicar PROFILE de PowerShell**:
+2️⃣ **Get PowerShell PROFILE**:
 
 ```powershell
 notepad $PROFILE
 ```
 
-3️⃣ **Restaurar la configuración de Windows Terminal**:
+3️⃣ **Restore Windows Terminal configuration**:
 
-Copia el contenido de `PS_Profile` y pégalo en el archivo recién abierto:
+Copy the content of  `PS_Profile` and paste into the newly opened file (step 1):
 
 ```powershell
 Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/WF.omp.json" | Invoke-Expression
 ```
 
-[⬆️ Volver a la tabla de contenidos](#-tabla-de-contenidos)
+[⬆️ Back to index](#-index)
 
 ---
 
-### 📂 Instalación Automática <a id="instalacion-automatica"></a>
+### 📂 Automated installation <a id="auto"></a>
 
-**1️⃣ Clonar el repositorio**
+**1️⃣ Clone the repository**
 
 ```bash
 git clone -b windows https://github.com/wilhen199/dotfiles.git dotfiles
 ```
 
-**2️⃣ Entrar a la carpeta `dotfiles` y ejecutar `install.ps1` con PowerShell 7 o superior como Administrador**
+**2️⃣ Enter the `dotfiles` folder and run `install.ps1` using PowerShell 7 or higher as an Administrator**
 
-El script instalará automáticamente:
+Script will install:
+
 - [Oh My Posh](https://ohmyposh.dev/docs/)
-- Fuente [Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
+- Font [Hack Nerd Font](https://www.nerdfonts.com/font-downloads)
 - [Microsoft.Coreutils](https://learn.microsoft.com/eu-es/windows/core-utils/overview)
-- `bat` - es como un `cat` pero con esteroides 😂
-- `lsd` - es como `ls` pero con esteroides 😂
-- `fzf` - buscador interactivo en la terminal
+- `bat` - it's like `cat` but on steroids 😂
+- `lsd` - it's like `ls` but on steroids 😂
+- `fzf` - interactive search in the terminal
 
-[⬆️ Volver a la tabla de contenidos](#-tabla-de-contenidos)
+[⬆️ Back to index](#-index)
 
 ---
 
-## 🖼 Capturas de Pantalla <a id="capturas-de-pantalla"></a>
+## 🖼️ Screenshots <a id="screenshots"></a>
 
-Aquí hay una vista previa de cómo debería verse la configuración después de la restauración:
+Here is a preview of how the configuration should look after the restoration:
 
 ![Windows Terminal](https://raw.githubusercontent.com/wilhen199/dotfiles/main/img/Windows_Terminal.png)
 
 ---
 
-## 📢 Notas Adicionales
+## 📢 Notes
 
-- Puedes personalizar aún más tu prompt editando el archivo de configuración del tema (`.omp.json`).
-- Oh My Posh también te permite usar segmentos personalizados para mostrar información adicional en tu prompt.
-- Consulta la [documentación de Oh My Posh](https://ohmyposh.dev/docs/) para profundizar más.
+- You can further customize your prompt by editing the theme configuration file (`.omp.json`).
+- Oh My Posh also allows to use custom segments to display additional information in your prompt.
+- Check [Oh My Posh docs](https://ohmyposh.dev/docs/) para learn more.
 
 ---
 
-✍️ **Wilhen | [GitHub](https://github.com/wilhen199) | [LinkedIn](https://www.linkedin.com/in/wilhen-figueredo/)**
+✍️ **Wilhen**
+
+<p align="left">
+  <a href="https://linkedin.com/in/wilhen-figueredo" target="_blank" rel="noopener">
+    <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn">
+  </a>
+  <a href="mailto:wilhen199@gmail.com">
+    <img src="https://img.icons8.com/fluency/48/email.png" alt="Gmail">
+  </a>
+  <a href="https://wilhenfigueredo.dev" target="_blank" rel="noopener">
+    <img src="https://img.icons8.com/fluency/48/resume-website.png" alt="CV-Digital">
+  </a>
+</p>
+
+---
