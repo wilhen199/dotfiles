@@ -1,4 +1,4 @@
-# 🚀 Dotfiles de Linux - Restauración y Configuración
+# 🐧 Linux dotfiles - Restore and configuration 
 
 Restore a Zsh setup with **Powerlevel10k**, and a set of useful aliases, replicating this repository in minutes.
 
@@ -107,7 +107,8 @@ The `.zshrc` detects your distribution automatically (Arch, Fedora, or Debian/Ub
 
 Here is a preview of how the configuration should look after the restoration:
 
-![Terminal con Powerlevel10k](../main/img/Extendida.png)
+![Arch](../main/img/Extendida.png)
+![Fedora (New design)](../main/img/Fedora_WSL.png)
 
 ---
 
