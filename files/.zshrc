@@ -191,6 +191,7 @@ alias gd="git diff"
 alias gaa="git add --all"
 alias gcmsg="git commit"
 alias ggcheck="git checkout"
+alias ggfetch="git fetch"
 alias ggpush="git push"
 alias ggpull="git pull"
 
