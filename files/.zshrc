@@ -9,6 +9,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME:/usr/local/bin:$PATH
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH=$HOME/dotfiles:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH_DISABLE_COMPFIX="true"
