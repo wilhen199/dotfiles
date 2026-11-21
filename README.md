@@ -2,9 +2,9 @@
 
 Personal configuration files for **Linux** and **Windows**, organized in separate branches for each platform.
 
-📂 **Available brances:**
+🖥️ **Available brances:**
 - 🐧 **[Linux](https://github.com/wilhen199/dotfiles/tree/linux)** → Zsh with Powerlevel10k, aliases, and desktop configuration (XFCE, Tilix, Conky, Rofi). Supports Arch Linux, Fedora, Debian, and Ubuntu.
-- 🖥️ **[Windows](https://github.com/wilhen199/dotfiles/tree/windows)** → Windows Terminal and PowerShell configuration with Oh My Posh.
+- 🪟 **[Windows](https://github.com/wilhen199/dotfiles/tree/windows)** → Windows Terminal and PowerShell configuration with Oh My Posh.
 
 ---
 
