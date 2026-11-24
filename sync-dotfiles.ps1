@@ -60,8 +60,8 @@ if ($changes) {
     git status --short
     git diff --stat
 
-    $answer = Read-Host "`nPush these changes to GitHub? (s/n)"
-    if ($answer -eq "s") {
+    $answer = Read-Host "`nPush these changes to GitHub? (y/n)"
+    if ($answer.Trim().ToLower() -in @("s", "y")) {
         git add .
         git commit -m "🔄 Automatic sync $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
         git push origin $branch
