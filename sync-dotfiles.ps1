@@ -8,11 +8,26 @@ $repoURL = "https://github.com/wilhen199/dotfiles.git"
 $repoPath = "$env:USERPROFILE\dotfiles"
 $branch = "windows"
 
-# Dotfiles locations
+### Dotfiles locations
+###$dotfiles = @{
+###    "$PROFILE"                                                                                    = "PS_profile.ps1"
+###    "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = "WT_settings.json"
+###    "$env:POSH_THEMES_PATH/WF.omp.json"                                                           = "WF.omp.json"
+###}
+
+# Find the Oh My Posh themes folder
+if ($env:POSH_THEMES_PATH) {
+    $themesDir = $env:POSH_THEMES_PATH
+}
+else {
+    $themesDir = "$env:LOCALAPPDATA\Programs\oh-my-posh\themes"
+}
+
+# Local file (key) -> file name in the repo (value)
 $dotfiles = @{
-    "$PROFILE"                                                                                    = "PS_profile.ps1"
+    $PROFILE                                                                                      = "PS_profile.ps1"
     "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = "WT_settings.json"
-    "$env:POSH_THEMES_PATH/WF.omp.json"                                                           = "WF.omp.json"
+    (Join-Path $themesDir "WF.omp.json")                                                          = "WF.omp.json"
 }
 
 # Clone or update the repo
@@ -41,10 +56,20 @@ foreach ($source in $dotfiles.Keys) {
 # Push changes automatically
 $changes = git status --porcelain
 if ($changes) {
-    git add .
-    git commit -m "🔄 Automatic sync $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
-    git push origin $branch
-    Write-Host "✅ Dotfiles synced and pushed to GitHub"
+    Write-Host "`nChanges detected:" -ForegroundColor Cyan
+    git status --short
+    git diff --stat
+
+    $answer = Read-Host "`nPush these changes to GitHub? (s/n)"
+    if ($answer -eq "s") {
+        git add .
+        git commit -m "🔄 Automatic sync $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+        git push origin $branch
+        Write-Host "✅ Dotfiles synced and pushed to GitHub" -ForegroundColor Green
+    }
+    else {
+        Write-Host "⏸️ Copied to the repo but not pushed. Run the script again to push." -ForegroundColor Yellow
+    }
 }
 else {
     Write-Host "✅ No new changes"

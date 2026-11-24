@@ -8,11 +8,19 @@ $repoURL = "https://github.com/wilhen199/dotfiles.git"
 $repoPath = "$env:USERPROFILE\dotfiles"
 $branch = "windows"
 
-# Dotfiles locations
+# Find the Oh My Posh themes folder
+if ($env:POSH_THEMES_PATH) {
+    $themesDir = $env:POSH_THEMES_PATH
+}
+else {
+    $themesDir = "$env:LOCALAPPDATA\Programs\oh-my-posh\themes"
+}
+
+# File in the repo (key) -> local destination (value)
 $dotfiles = @{
-    "PS_profile.ps1"   = "$PROFILE"
+    "PS_profile.ps1"   = $PROFILE
     "WT_settings.json" = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-    "WF.omp.json"      = "$env:POSH_THEMES_PATH/WF.omp.json"
+    "WF.omp.json"      = (Join-Path $themesDir "WF.omp.json")
 }
 
 # Clone or update the repo
@@ -30,6 +38,11 @@ foreach ($source in $dotfiles.Keys) {
     $repoFile = Join-Path $repoPath $source
 
     if (Test-Path $repoFile) {
+        $targetDir = Split-Path $target
+        if (-not (Test-Path $targetDir)) {
+            New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
+        }
+
         Copy-Item -Path $repoFile -Destination $target -Force
         Write-Host "✅ Restored: $repoFile → $target"
     }
@@ -38,4 +51,5 @@ foreach ($source in $dotfiles.Keys) {
     }
 }
 
-Write-Host "✅ Dotfiles restoration completed."
+Write-Host "✅ Dotfiles restoration completed." -ForegroundColor Green
+Write-Host "Close and reopen Windows Terminal to see the changes."
