@@ -8,13 +8,6 @@ $repoURL = "https://github.com/wilhen199/dotfiles.git"
 $repoPath = "$env:USERPROFILE\dotfiles"
 $branch = "windows"
 
-### Dotfiles locations
-###$dotfiles = @{
-###    "$PROFILE"                                                                                    = "PS_profile.ps1"
-###    "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" = "WT_settings.json"
-###    "$env:POSH_THEMES_PATH/WF.omp.json"                                                           = "WF.omp.json"
-###}
-
 # Find the Oh My Posh themes folder
 if ($env:POSH_THEMES_PATH) {
     $themesDir = $env:POSH_THEMES_PATH

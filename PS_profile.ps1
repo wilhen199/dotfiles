@@ -2,8 +2,6 @@
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
 
 # Oh My Posh first
-#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/WF.omp.json" | Invoke-Expression
-
 if ($env:POSH_THEMES_PATH) {
     $themesDir = $env:POSH_THEMES_PATH
 }
