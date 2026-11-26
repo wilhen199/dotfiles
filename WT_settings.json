@@ -61,7 +61,7 @@
             {
                 "face": "Hack Nerd Font"
             },
-            "opacity": 95,
+            "opacity": 92,
             "tabTitle": "Wilhen"
         },
         "list":
@@ -108,30 +108,6 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": true,
                 "name": "S\u00edmbolo del sistema"
-            },
-            {
-                "guid": "{dcdbcc39-4606-5b16-b067-82d086b34e96}",
-                "hidden": false,
-                "name": "archlinux",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{d70b47d4-b398-5a50-b589-c87e7cfbbd52}",
-                "hidden": false,
-                "name": "Debian",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{62faccb6-2323-516e-ad79-c7f3e3ad79bd}",
-                "hidden": false,
-                "name": "Debian",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{5e800293-b682-5a4e-ae89-eafc016d7609}",
-                "hidden": false,
-                "name": "Ubuntu-22.04",
-                "source": "Microsoft.WSL"
             }
         ]
     },

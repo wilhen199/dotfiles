@@ -27,6 +27,28 @@ function Open-FullHistory { code (Get-PSReadLineOption).HistorySavePath }
 Set-Alias -Name wupgrade -Value winget-get-upgrade -Option AllScope -Force
 function winget-get-upgrade { winget upgrade --all --include-unknown --silent --accept-package-agreements --accept-source-agreements --force }
 
+# Firewall Rules
+function Get-FwInfo {
+    param([string[]]$Name)
+    foreach ($n in $Name) {
+        Get-NetFirewallRule -DisplayName $n | ForEach-Object {
+            $p = $_ | Get-NetFirewallPortFilter
+            $a = $_ | Get-NetFirewallAddressFilter
+            [PSCustomObject]@{
+                DisplayName   = $_.DisplayName
+                Enabled       = $_.Enabled
+                Direction     = $_.Direction
+                Protocol      = $p.Protocol
+                LocalPort     = $p.LocalPort
+                RemotePort    = $p.RemotePort
+                LocalAddress  = $a.LocalAddress
+                RemoteAddress = $a.RemoteAddress
+            }
+        }
+    }
+}
+
+
 # Terraform
 Set-Alias tf terraform
 function tfp { terraform plan $args }
